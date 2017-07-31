@@ -29,23 +29,20 @@
               </h1>
               <div class="form-block w-form">
                 <form data-name="Email Form" data-redirect="https://wiquadro.com.br/site/registro" id="email-form" method="post" name="email-form" redirect="https://wiquadro.com.br/site/registro">
-                  <label class="field-label" for="name">
+                  <label class="field-label" for="LoginForm_username">
                     e-mail
                   </label>
-                  <input class="w-input" data-name="Name" id="name" maxlength="256" name="name" required="required" type="text">
-                    <label class="field-label" for="node">
-                      senha
-                    </label>
-                    <input class="w-input" id="node" maxlength="256" required="required" type="password">
-                      <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="LOGIN">
-                        <a class="submit-button-2 w-inline-block" href="https://wiquadro.com.br/site/registro">
-                          <div class="text-block-3">
-                            CADASTRAR
-                          </div>
-                        </a>
-                      </input>
-                    </input>
-                  </input>
+                  <input class="text-field w-input" data-name="LoginForm_username" id="LoginForm_username" maxlength="50" name="LoginForm[username]" required="required" type="text"/>
+                  <label class="field-label-2" for="LoginForm_password">
+		    SENHA
+	          </label>
+		  <input class="text-field-2 w-input" data-name="LoginForm_password" maxlength="32" name="LoginForm[password]" id="LoginForm_password" type="password" required="required" type="password"/>
+                  <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="LOGIN"/>
+                  <a class="submit-button-2 w-inline-block" href="https://wiquadro.com.br/site/registro">
+                    <div class="text-block-3">
+                      CADASTRAR
+                    </div>
+                  </a>
                 </form>
                 <div class="w-form-done">
                   <div>
