@@ -529,6 +529,7 @@
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  transition-duration: 0.4s;
 }
 
 .submit-button:hover {
@@ -545,7 +546,13 @@
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  transition-duration: 0.4s;
 }
+
+.submit-button-2:hover {
+  background-color: #cf4430;
+}
+
 a:-webkit-any-link {
 	text-decoration: none;
 }
