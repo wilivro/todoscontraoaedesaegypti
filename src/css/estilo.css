@@ -531,6 +531,10 @@
   text-transform: uppercase;
 }
 
+.submit-button:hover {
+  background-color: #cc8e2a;
+}
+
 .submit-button-2 {
   width: 49%;
   padding-top: 12px;
