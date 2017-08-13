@@ -1,0 +1,197 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/arrasta'], function (edi) {
+
+  edi.setConfig({
+    mascote: '',
+    sexo: "M",
+    tempoFinal: 5,
+    titulo: 'Arraste para o mosquito as doenças <br> que podem ser transmitidas pelo <span id="italic">Aedes aegypti</span>.'
+  });
+
+  var arrArrasta = [
+  {
+    arrasta: 'Febre Amarela',
+    dataCorreta: '1', dataId: '1'
+  },
+  {
+    arrasta: 'Catapora',
+    dataCorreta: '0', dataId: '2'
+  },
+  {
+    arrasta: 'Zica',
+    dataCorreta: '1', dataId: '3'
+  },
+  {
+    arrasta: 'Gripe',
+    dataCorreta: '0', dataId: '4'
+  },
+  {
+    arrasta: 'Sarampo',
+    dataCorreta: '0', dataId: '5'
+  },
+  {
+    arrasta: 'Dengue',
+    dataCorreta: '1', dataId: '6'
+  },
+  {
+    arrasta: 'Chicungunha',
+    dataCorreta: '1', dataId: '7'
+  }
+  ];
+
+  arrArrasta.sort(function () {
+    return 0.5 - Math.random()
+  });
+
+  for (var i = 0; i < arrArrasta.length; i++) {
+    $('<div>')
+      .addClass('arrasta fundoArrasta azulAlpha')
+      .attr({
+        'data-id': arrArrasta[i].dataId,
+        id: 'arrasta' + (i + 1),
+        'data-correta': arrArrasta[i].dataCorreta,
+      })
+    .html(arrArrasta[i].arrasta)
+      .appendTo('#arrasta');
+  }
+
+  var config = {
+    colorirFilho: true,
+    multAlvo: true,
+    destroy: true,
+    target: false,
+    reloadCorreta: false
+  };
+
+  edi.arrasta('arrasta', 'alvo', function (a, b, c) {
+    $(b).parent().css({
+      height: 'auto'
+    });
+  }, function() {
+    $('.alvo').remove();
+  }, config);
+
+  $('.arrasta').css({
+    margin: -5,
+    padding: 5
+  });
+
+  $('<div>')
+    .attr('id', 'mascote')
+    .appendTo('#conteudo');
+
+  $('.arrasta').map(function(){
+    $(this).parent().css({
+      height: '',
+      display: 'inline-table'
+    });
+  });
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_4', 'todos_5').split('?')[0];
+    }
+  }
+};
+    </script>
+    <style>
+#boxArrasta {
+  width: 270px;
+  height: 270px;
+  cursor: default;
+  top: 15px;
+  left: 24px;
+}
+
+      #arrasta {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 470px;
+        height: 299px;
+        top: 1px;
+      }
+
+      .arrasta {
+        padding: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        display: inline-block;
+        color: #FFF;
+      }
+
+      #alvos {
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        left: 420px;
+        top: 82px;
+        border: 5px solid #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        border-radius: 260px;
+        padding: 10px;
+      }
+
+      .alvos-inner h5 {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        font-style: italic;
+      }
+
+      .alvo {
+        width: 100%;
+        height: 238px;
+        text-align: center;
+      }
+
+      #italic {
+        font-style: italic;
+      }
+
+      #img {
+        position: absolute;
+        width: 380px;
+        height: 540px;
+        left: 360px;
+        top: -30px;
+        background-image: url(../img/licao01/p04.svg);
+        background-size: 100% 100%;
+        z-index: 2000;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="img"></div>
+
+    <div id="boxArrasta" class="btn btn-default-hover">
+      <div id="arrasta"></div>
+    </div>
+
+    <div id="alvos">
+      <div class="alvos-inner">
+        <h5></h5>
+        <div class="alvo" data-correta="1"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

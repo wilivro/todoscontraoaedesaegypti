@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Área do Aluno - Todos contra do Aedes aegypti</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topo">
+                TODOS CONTRA O AEDES AEGYPTI
+            </div>
+            <div class="meio1">
+                <p>COLOQUE AQUI O CÓDIGO QUE ESTÁ NA PRIMEIRA PÁGINA DO LIVRO</p>
+                <input class="campo" id="campo" tabindex="1" name="LoginForm[username]" id="LoginForm_username" type="text" maxlength="50" value=""/>
+            </div>
+            <div class="meio3">
+                <button class="btn" id="btn">ENTRAR</button>
+            </div>
+            <div class="meio2">
+                <img src="images/capa-01.png"/>
+            </div>
+            <div class="footer">
+                <p style="font-size:12px; margin-bottom:8px;">PATROCÍNIO:</p>
+                <img src="images/logo-cx-br.png"/>
+            </div>
+        </div>
+    </body>
+    <script language="javascript">
+
+var $ = function($) {
+    return document.getElementById($)
+};
+
+var btn = $('btn');
+var campo = $('campo');
+var tentativas = 0;
+
+var onClick = function () {
+
+    var val = campo.value.trim().toLowerCase();
+    if (val === "") {
+        return;
+    } else if (val === 'f4z3r0b3m') {
+        document.location = 'video.html';
+    } else {
+        tentativas++;
+        campo.value = '';
+        if (tentativas < 3) {
+            alert('Código incorreto, por favor preste bastante atenção ao inserir o código, ele precisa estar exatamente igual ao informado no livro.');
+        } else if (tentativas < 6) {
+            alert('Identificamos um excesso de tentativas ao tentar inserir o código, caso você tenha o código em mãos e ainda sim está tendo alguma dificuldade, sugerimos que peça a ajuda de alguém para inserir o código corretamente.');
+        } else {
+            alert('Caso queira realizar o curso e não tenha um codigo por favor entre em contato com henri@wilivro.com.br e solicite uma senha.')
+        }
+    }
+    campo.focus();
+};
+
+btn.addEventListener("click", onClick);
+
+campo.addEventListener("keydown", function(e) {
+    if (e.keyCode === 13) {
+        onClick();
+    }
+});
+    </script>
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53173925-2', 'auto');
+ga('send', 'pageview');
+
+    </script>
+</html>

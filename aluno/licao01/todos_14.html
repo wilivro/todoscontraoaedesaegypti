@@ -1,0 +1,177 @@
+<!-- Desenvolvedor: Rodolfo Araújo-->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/alternativa_boliche'], function (edi) {
+
+  edi.setConfig({
+    sexo: "M",
+    titulo: 'Leia cada pergunta a seguir e selecione a resposta correta.',
+    tempoFinal: 5,
+    qtdTelas: 2
+  });
+
+  var btns = {
+    tela1: {
+      texto: 'O <span class="italic">Aedes aegypti</span> consegue transmitir a dengue, chicungunha ou o vírus da zica imediatamente após sua contaminação?',
+      btns: [
+      {texto: 'Sim', dataCorreta: false},
+      {texto: 'Não', dataCorreta: true}
+      ]
+    },
+    tela2: {
+      texto: 'Todo <span class="italic">Aedes aegypti</span> transmite a dengue, o vírus <br> da zica e/ou a febre chicungunha?',
+      btns: [
+      {texto: 'Sim', dataCorreta: false},
+      {texto: 'Não', dataCorreta: true}
+      ]
+    },
+    tela3: {
+      texto: 'É verdade que existe outro mosquito transmissor <br> da dengue além do <span class="italic">Aedes aegypti</span>?',
+      btns: [
+      {texto: 'Sim', dataCorreta: true},
+      {texto: 'Não', dataCorreta: false}
+      ]
+    }
+  };
+
+  var config = {
+    width: 240,
+    fontSize: '16px',
+    widthBoxTexto: 518,
+    boliche: true,
+    basquete: false,
+    randomico: false
+  };
+
+  var callback = function (a) {
+    //$('.btn').fadeOut();
+    if(a){
+      $('#acerto'+edi.telaAtual()).fadeIn();
+    } else {
+      $('#errado'+edi.telaAtual()).fadeIn();
+    }
+  }
+
+  edi.alternativa_boliche(btns, callback, config);//iniciando o EDI
+
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_14', 'todos_15').split('?')[0];
+    }
+  }
+};
+    </script>
+
+    <style>
+
+#acerto1{
+  top: 270px;
+  left: 125px;
+  width: 490px;
+  height: 90px;
+  padding: 5px 20px;
+}
+
+    #errado1{
+      top: 270px;
+      left: 122px;
+      width: 490px;
+      height: 90px;
+      padding: 5px 20px;
+    }
+
+    #acerto2{
+      top: 270px;
+      left: 125px;
+      width: 490px;
+      height: 45px;
+      padding: 20px 20px;
+    }
+
+    #errado2{
+      top: 270px;
+      left: 122px;
+      width: 490px;
+      height: 40px;
+      padding: 20px 20px;
+    }
+
+    #acerto3{
+      top: 270px;
+      left: 125px;
+      width: 490px;
+      height: 45px;
+      padding: 20px 20px;
+    }
+
+    #errado3{
+      top: 270px;
+      left: 122px;
+      width: 490px;
+      height: 40px;
+      padding: 20px 20px;
+    }
+
+    .bordaVerde{
+      position: absolute;
+      color: #9c0;
+      border: 2px dashed #9c0;
+      text-align: center;
+      background-color: #FFF;
+      z-index: 1;
+      display: none;
+    }
+
+    .bordaVermelho{
+      position: absolute;
+      color: #f00;
+      border: 2px dashed #f00;
+      text-align: center;
+      background-color: #FFF;
+      z-index: 1;
+      display: none;
+    }
+
+    #negrito {
+      font-weight: bold;
+    }
+
+    #ctSection {
+      top: 105px !important;
+    }
+
+    .alter-btn {
+      left: -20px !important;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="acerto1" class="arredondado bordaVerde">Muito bem! Ao picar uma pessoa infectada com o vírus, a <br> fêmea do mosquito passa por um período de incubação <br> e só após oito a dez dias, está apta a transmitir a <br> doença à próxima pessoa que for picada.</div>
+    <div id="acerto2" class="arredondado bordaVerde">Muito bem! Apenas as fêmeas infectadas transmitem a doença, ou seja, apenas as fêmeas que contraíram o vírus.</div>
+    <div id="acerto3" class="arredondado bordaVerde">Muito bem! A dengue pode ser transmitida por duas espécies de mosquitos: <span class="italic">Aedes aegypti</span> e <span class="italic">Aedes albopictus</span>.</div>
+
+    <div id="errado1" class="arredondado bordaVermelho">Tente novamente! Ao picar uma pessoa infectada com o vírus, a fêmea do mosquito passa por um período de incubação e só após oito a dez dias, está apta a transmitir a doença à próxima pessoa que for picada.</div>
+    <div id="errado2" class="arredondado bordaVermelho">Tente novamente! Apenas as fêmeas infectadas transmitem a doença, ou seja, apenas as fêmeas que contraíram o vírus.</div>
+    <div id="errado3" class="arredondado bordaVermelho">Tente novamente! A dengue pode ser transmitida por duas espécies de mosquitos: <span class="italic">Aedes aegypti</span> e <span class="italic">Aedes albopictus</span>.</div>
+
+  </body>
+</html>

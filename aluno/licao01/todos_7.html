@@ -1,0 +1,69 @@
+<!-- Desenvolvedor: Danilo Thiago -->
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <title>Todos contra o Aedes aegypti</title> <!-- alt_f002 -->
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/alternativa_com_carimbo'], function (edi) {
+
+  edi.setConfig({
+    titulo: 'Classifique como <span id="negrito">Certa</span> ou <span id="negrito">Errada</span> cada explicação a seguir:',
+    sexo: "F",
+    tempoFinal: 5
+  });
+
+  //balões
+  var baloes = [
+
+  {texto: 'O Brasil é o único país do mundo onde foram relatados casos de chicungunha e zica. ', dataCorreta: false},
+  {texto: 'Gatos e cachorros não podem pegar dengue. ', dataCorreta: true},
+  {texto: 'Apenas o mosquito macho se alimenta de sangue humano. ', dataCorreta: false},
+  {texto: 'Em uma só picada, um mosquito <span class="italico">Aedes aegypti</span> pode transmitir os três vírus (o vírus da zica, o vírus da dengue e o da chicungunha). ', dataCorreta: false}
+
+  ];
+
+  edi.iniciar(baloes, function (a, b) {
+    //cb
+  }, function (a) {
+    //
+  }, {
+    top: 115,
+    left: 60,
+    fontSize: 13
+  });
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_7', 'todos_8').split('?')[0];
+    }
+  }
+};
+    </script>
+    <style>
+
+    #negrito {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .italico {
+      font-style: italic;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="msg"></div>
+  </body>
+
+</html>

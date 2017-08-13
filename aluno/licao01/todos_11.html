@@ -1,0 +1,74 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+  <!doctype html>
+  <html lang="pt-br">
+  <head>
+  <title>Todos contra o Aedes aegypti</title>
+  <meta charset="utf-8">
+  <script src="../wilib/js/lib/require.js"></script>
+  <script src="../wilib/js/app.js"></script>
+  <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+  <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+  <script>
+  require(['../wilib/js/lib/memoria'], function (edi) {
+
+  edi.setConfig({
+      sexo: "F",
+      tempoFinal: 5,
+      titulo: 'Vamos ver se você tem uma boa memória. Selecione a carta para poder visualizá-la e forme os pares das dicas com as imagens.'
+      });
+
+      var carta = [];
+
+      carta.push({img: '../img/licao01/p11_1.svg',bg:'', cartaBranca:false,  texto: '', dataCorreta: 1});
+      carta.push({img: '../img/licao01/p11_2.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 1});
+
+      carta.push({img: '../img/licao01/p11_3.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 2});
+      carta.push({img: '../img/licao01/p11_4.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 2});
+
+      carta.push({img: '../img/licao01/p11_5.svg',bg:'', cartaBranca:false,  texto: '', dataCorreta: 3});
+      carta.push({img: '../img/licao01/p11_6.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 3});
+
+      carta.push({img: '../img/licao01/p11_7.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 4});
+      carta.push({img: '../img/licao01/p11_8.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 4});
+
+      carta.push({img: '../img/licao01/p11_9.svg',bg:'', cartaBranca:false,  texto: '', dataCorreta: 5});
+      carta.push({img: '../img/licao01/p11_10.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 5});
+
+      carta.push({img: '../img/licao01/p11_11.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 6});
+      carta.push({img: '../img/licao01/p11_12.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 6});
+
+      carta.push({img: '../img/licao01/p11_13.svg',bg:'', cartaBranca:false,  texto: '', dataCorreta: 7});
+      carta.push({img: '../img/licao01/p11_14.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 7});
+
+      carta.push({img: '../img/licao01/p11_15.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 8});
+      carta.push({img: '../img/licao01/p11_16.svg',bg:'', texto: '', cartaBranca:false, dataCorreta: 8});
+
+
+      edi.memoria(carta, null , null, {
+      width: 103,
+      top: 10,
+      height: 26,
+      padding: 1
+    });
+
+ });
+  window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_11', 'todos_12').split('?')[0];
+    }
+  }
+};
+
+
+  </script>
+  <style>
+
+  </style>
+  </head>
+  <body>
+
+  </body>
+  </html>

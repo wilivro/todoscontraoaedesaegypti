@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/arrasta'], function (edi) {
+
+  edi.setConfig({
+    titulo: 'Consulte o texto a seguir e arraste os números para os locais corretos.',
+    tempoFinal: 5
+  });
+
+  var arrArrasta = [
+  {arrasta: '1.026.226', dataCorreta: '3', dataId: '1'},
+
+  {arrasta: '311.519', dataCorreta: '1', dataId: '2'},
+
+  {arrasta: '220.966', dataCorreta: '2', dataId: '3'},
+
+  {arrasta: '56.187', dataCorreta: '4', dataId: '4'},
+
+  {arrasta: '34.110', dataCorreta: '0', dataId: '5'}
+
+  ];
+
+  arrArrasta.sort(function () {
+    return 0.5 - Math.random()
+  });
+
+  for (var i = 0; i < arrArrasta.length; i++) {
+    $('<div>')
+      .addClass('arrasta fundoArrasta azulAlpha')
+      .attr({
+        'data-id': arrArrasta[i].dataId,
+        id: 'arrasta' + (i + 1),
+        'data-correta': arrArrasta[i].dataCorreta
+      })
+    .html(arrArrasta[i].arrasta)
+      .appendTo('#arrasta');
+  }
+
+  var config = {
+    alvoFixo: false,
+    target: true
+  };
+
+  edi.arrasta('arrasta', 'alvo', function (a, b, c) {
+    c.html(b.css({
+      top: 1,
+      fontSize: 6,
+      padding: 0,
+      width: c.css('width'),
+      height: c.css('height')
+    }))
+  }, function (a) {
+    $('#caixa').fadeOut();
+  }, config);
+
+  $('.arrasta').css({
+    margin: -5,
+    padding: 5
+  });
+
+  $('#ico').iconeInterrogacaoAzul();
+
+  $('#balao').peBalao({
+    left: 10,
+    top: -16
+  });
+
+
+  $('<div>')
+    .attr('id', 'mascote')
+    .appendTo('#conteudo');
+
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_8', 'todos_9').split('?')[0];
+    }
+  }
+};
+    </script>
+    <style>
+
+    .alvo {
+      position: absolute;
+      width: 36px;
+      height: 7px;
+      text-align: center;
+      border: 1px solid #fff;
+      background-color: #fff;
+      opacity: 0.7;
+      padding-bottom: 2px;
+    }
+
+    .arrasta {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: 10px;
+      display: inline-block;
+      color: #9a2830;
+      font-weight: bold;
+    }
+
+    #boxArrasta {
+      position: absolute;
+      width: 60px;
+      height: 270px;
+      cursor: default;
+      top: 90px;
+      padding-left: 25px;
+      left: 625px;
+      background: #fff;
+    }
+
+    #arrasta {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 200px;
+      height: 270px;
+    }
+
+    #caixa {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 610px;
+      top: 152px;
+      border: 5px solid #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.3);
+      background: #fff;
+      border-radius: 120px;
+      padding: 10px;
+    }
+
+    #balao {
+      border: 1px solid #ccc;
+      background: #fff;
+      width: 180px;
+      height: 258px;
+      position: absolute;
+      left: 10px;
+      padding: 5px;
+      top: 95px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.2;
+      border-radius: 10px;
+      color: #48A2D4;
+    }
+
+    #ico {
+      margin: 20px 20px;
+      height: 59px;
+      position: relative;
+    }
+
+    #ico img {
+      left: 45px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="boxTexto">
+
+      <img src="../img/licao01/p08.svg" width="355" style="position: absolute; top: 76px; left:220px">
+
+      <div id="boxArrasta">
+        <div id="arrasta"></div>
+      </div>
+
+      <div class="alvo" data-correta="0" style="top: 113px; left: 336px"></div>
+    </div>
+
+    <div class="alvo" data-correta="1" style="top: 138px; left: 497px"></div>
+  
+
+  <div class="alvo" data-correta="2" style="top: 183px; left: 383px"></div>
+    
+
+    <div class="alvo" data-correta="3" style="top: 213px; left: 477px"></div>
+    
+
+    <div class="alvo" data-correta="4" style="top: 296px; left: 402px"></div>
+    
+
+    <div id="caixa"></div>
+
+    <div id="balao">
+      <div id="ico"></div>
+      <p>Em 2015, foram registrados 1.649.008 casos prováveis de dengue no país, até a semana epidemiológica 52 (04/01/2015 a 02/01/2016). Nesse período, a região Sudeste registrou o maior número de casos prováveis em relação ao total do país, seguida das regiões Nordeste, Centro-Oeste, <br> Sul e Norte.
+      </p>
+    </div>
+
+
+    
+  </body>
+</html>

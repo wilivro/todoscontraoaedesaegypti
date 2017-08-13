@@ -1,0 +1,111 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link type="text/css" rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/edi'], function (edi) {
+
+  edi.iniciar({// configurando o EDI
+    titulo: 'Selecione apenas os mosquitos <span id="italico">Aedes aegypti</span>.',
+    sexo: "F",
+    tempoFinal: 5,
+    enunciado: 'vertical'
+  });
+
+  var cont = 0, condicao = true;
+
+  $('.ct').mousedown(function(){
+    var _this = $(this);
+    if(!_this.hasClass('a')){
+      _this.addClass('a')
+        var ct =$('<div>')
+        .css({
+          display: 'table-cell',
+          verticalAlign: 'middle',
+          textAlign: 'center',
+          width: _this.width(),
+          height: _this.height()
+        })
+      .appendTo(_this)
+        var img = $('<img>')
+        .attr({
+          width: 110,
+          src: '../img/licao01/proibido_vermelho.svg'
+        })
+      .css({opacity: 0})
+        .appendTo(ct)
+        img.animate({
+          width: 66,
+          opacity: 1
+        },1500)
+      cont++;
+    }
+    setTimeout(function(){
+      if(cont == 7 && condicao) {
+        edi.finalizar()
+          condicao = false;
+
+      }
+    }, 4000);
+
+
+  });
+
+  edi.util.removeLoading();
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_2', 'todos_3').split('?')[0];
+    }
+  }
+};
+    </script>
+    <style>
+.ct {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+        #cidade {
+          background: url(../img/licao01/p02.svg) no-repeat;
+          cursor: pointer;
+          background-size: 100% 100%;
+          position: absolute;
+          width: 638px;
+          height: 383px;
+          left: -1px;
+          top: 0px;
+        }
+
+        #italico {
+          font-style: italic;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="cidade"></div>
+
+    <div class="ct" style="width: 66px; height: 69px;top: 155px; left: 41px"></div>
+    <div class="ct" style="width: 66px; height: 49px; top: 210px; left: 193px"></div>
+    <div class="ct" style="width: 66px; height: 49px; top: 266px; left: 105px"></div>
+    <div class="ct" style="width: 66px; height: 59px; top: 96px; left: 459px"></div>
+    <div class="ct" style="width: 66px; height: 59px; top: 123px; left: 301px"></div>
+    <div class="ct" style="width: 66px; height: 59px; top: 13px; left: 340px"></div>
+    <div class="ct" style="width: 66px; height: 59px; top: 304px; left: 235px"></div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title> <!-- alt_b001 -->
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/alternativa_botao'], function (edi) {
+
+  edi.setConfig({
+    sexo: "F",
+    tempoFinal: 5,
+    titulo: "Selecione a única alternativa que apresenta <br> uma informação <span id='sublinhado'>errada</span> sobre a dengue."
+  });
+
+  var btns = [];
+
+  btns.push({
+    texto: "A dengue pode se manifestar de diferentes maneiras: na sua forma clássica, <br> como dengue hemorrágica, como síndrome de choque da dengue e até mesmo <br> de forma inaparente, onde não há sintoma algum.",
+    dataCorreta: false
+  });
+
+  btns.push({
+    texto: "Há quatro subtipos do vírus da dengue. Portanto, a pessoa, <br> ao longo da sua vida, pode contrair a doença quatro vezes.",
+    dataCorreta: false
+  });
+
+  btns.push({
+    texto: "Os primeiros sintomas da dengue começam a aparecer imediatamente após  <br>  a picada domosquito infectado. Neste momento é importante ficar isolado, pois  <br> uma pessoa pode rapidamente transmitir a doença para outra.",
+    dataCorreta: true
+  });
+
+  btns.push({
+    texto: "Se a pessoa contrair dengue pela segunda vez, a tendência é que seja mais grave.",
+    dataCorreta: false
+  });
+
+  var config = {
+    colunas: 1,
+    width: 620,
+    height: 35,
+    left: 80,
+    top: 80,
+    margin: '12px 12px 0 12px',
+    fontSize: 12,
+    btnBranco: true,
+    randomico: true,
+    lineHeight: '1.4',
+    animacao: true,
+    fontWeight: 'normal',
+  }
+
+  edi.alternativa_botao(btns, null, null, config);
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_5', 'todos_6').split('?')[0];
+    }
+  }
+};
+    </script>
+
+    <style>
+      #sublinhado {
+        text-decoration: underline;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+  </body>
+</html>

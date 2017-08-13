@@ -1,0 +1,208 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/arrasta'], function (edi) {
+
+  edi.setConfig({
+    sexo: "F",
+    titulo: 'Diferencie a zica da chicungunha arrastando <br> cada sintoma para o local correspondente.',
+    tempoFinal: 5
+  });
+
+  var arrArrasta = [
+  {arrasta: 'Possibilidade de febre baixa.', dataCorreta: '1', dataId: '1'},
+  {arrasta: 'Possibilidade de sentir dores leves.', dataCorreta: '2', dataId: '2'},
+  {arrasta: 'Habitualmente presentes, manifestando-se nas primeiras 24 horas.', dataCorreta: '3', dataId: '3'},
+  {arrasta: 'Possiblidade de ocorrência, de <br> forma leve a intensa.', dataCorreta: '4', dataId: '4'},
+  {arrasta: 'Habitualmente presente, febre alta.', dataCorreta: '5', dataId: '5'},
+  {arrasta: 'Habitualmente presentes, dores intensas.', dataCorreta: '6', dataId: '6'},
+  {arrasta: 'Habitualmente presentes, manifestando-se nas primeiras 48 horas.', dataCorreta: '7', dataId: '7'},
+  {arrasta: 'Habitualmente presente, de forma leve.', dataCorreta: '8', dataId: '8'}
+  ];
+
+  arrArrasta.sort(function () {
+    return 0.5 - Math.random()
+  });
+
+  for (var i = 0; i < arrArrasta.length; i++) {
+    $('<div>')
+      .addClass('arrasta fundoArrasta azulAlpha')
+      .attr({
+        id: 'arrasta' + i,
+        'data-correta': arrArrasta[i].dataCorreta,
+        'data-id': arrArrasta[i].dataId
+      })
+    .css({
+      display: 'inline-block',
+      fontSize: 10
+    })
+    .html(arrArrasta[i].arrasta)
+      .appendTo('#arrasta');
+  }
+
+  var config = {
+    colorirFilho: true,
+    target: true,
+    reloadCorreta: true,
+    displaySpan: 'inline'
+  };
+
+  edi.arrasta('arrasta', 'alvo', function (a, b) {
+  }, function(a){
+    if (a)
+      $('#msgAcerto').fadeIn();
+  }, config);
+
+  ajuda({top: 5, left: 7, width: 280});
+
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_6', 'todos_7').split('?')[0];
+    }
+  }
+};
+    </script>
+
+    <style>
+#ctArrasta {
+  position: absolute;
+  top: 85px;
+  left: 10px;
+  width: 200px;
+  height: 270px;
+  padding: 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+    #arrasta {
+      width: 160px;
+      height: 270px;
+      cursor: default;
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 10px;
+    }
+
+    .arrasta {
+      padding: 5px;
+      width: 200px;
+      margin-left: -3px;
+      padding: 5px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .area {
+      position: absolute;
+      top: 80px;
+      left: 290px;
+      border-radius: 10px;
+      width: 125px;
+      height: 270px;
+      box-shadow: 1px 1px 1px 1px #AFAFAF;
+      padding: 10px 50px;
+    }
+
+    .area p {
+      font-size: 16px;
+      color: #64899F;
+      font-style: italic;
+      text-align: center;
+      line-height: 20px;
+      height: 20px;
+      margin-bottom: 60px;
+    }
+
+
+    .alvo {
+      position: absolute;
+      top: 80px;
+      left: 3px;
+      border-radius: 10px;
+      width: 205px;
+      height: 25px;
+      box-shadow: 1px 1px 1px 1px #AFAFAF;
+      padding: 5px;
+      z-index: 1000;
+    }
+
+    .alvo p {
+      font-size: 16px;
+      color: #64899F;
+      font-style: italic;
+      text-align: center;
+      line-height: 20px;
+      height: 20px;
+      margin-bottom: 60px;
+    }
+
+    #negrito {
+      font-weight: bold;
+    }
+
+    #texto {
+      position: absolute;
+      left: 300px;
+      top: 140px;   
+      font-size: 14px;
+      font-weight: bold;      
+      color: #64899F;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="ctArrasta" class="btn btn-default-hover">
+      <div id="arrasta"></div>
+    </div>
+
+    <div class="area">
+      <p><span id="negrito">Zica</span></p>
+      <div class="alvo" data-correta="1" style="top:80px"></div>
+      <div class="alvo" data-correta="2" style="top:136px"></div>
+      <div class="alvo" data-correta="3" style="top:194px"></div>
+      <div class="alvo" data-correta="4" style="top:250px"></div>
+    </div>
+
+
+    <div class="area" style="left:530px">
+      <p><span id="negrito">Chicungunha</span><br></p>
+      <div class="alvo" data-correta="5" style="top:80px"></div>
+      <div class="alvo" data-correta="6" style="top:136px"></div>
+      <div class="alvo" data-correta="7" style="top:194px"></div>
+      <div class="alvo" data-correta="8" style="top:250px"></div>
+    </div>
+
+    <div id="texto">
+      Febre: <br><br><br>
+      Dores nas articulações: <br><br><br>
+      Manchas vermelhas na pele: <br><br><br>
+      Coceira: <br><br>
+    </div>
+
+    <div id="texto" style="left:540px">
+      Febre: <br><br><br>
+      Dores nas articulações: <br><br><br>
+      Manchas vermelhas na pele: <br><br><br>
+      Coceira: <br><br>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+   <script>
+require(['../wilib/js/lib/edi'], function (edi) {
+
+  edi.iniciar({
+    tempoFinal: 0,
+    enunciado: false
+  });
+
+  var canvas, stage, exportRoot;
+
+  var reflita = {
+    texto: 'Caro colega,<br>É muito bom tê-lo por aqui!<br> Agora que você terminou a leitura de seu livro Todos Contra o <span id="italico">Aedes aegypti</span>, chegou a hora de testar seus conhecimentos e ver se você realmente leu tudo com muita atenção.<br> Lembre-se: para ser um verdadeiro combatente desse mosquito tão malvado, você precisa conhecer bem alguns conceitos.<br> Por isso criamos para você, uma série de atividades e jogos interativos abordando os principais assuntos estudados no livro.<br> E aí, pronto para iniciar?'
+  };
+
+  function animacao() {
+    canvas = document.getElementById("canvas");
+    exportRoot = new lib.introdução();
+
+    stage = new createjs.Stage(canvas);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+  }
+
+  var init = function() {
+    animacao();
+    var $txt = $('<div>').css({
+      position: 'absolute',
+      top: 55,
+      left: 390,
+      textAlign: 'juatify',
+      fontSize: '14px',
+      width: 325,
+      color: '#eee',
+      border: '2px solid #FFFFFF',
+      borderRadius: 10,
+      padding: '10px 20px',
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      textShadow: '1px 1px 1px #000',
+      fontWeight: 'bold',
+      zIndex: 2,
+      display: 'none',
+      letterSpacing: '1'
+    }).html(reflita.texto).appendTo('#texto');
+
+    setTimeout(function(){
+      $txt.fadeIn(
+          setTimeout(function() {
+            edi.finalizar();
+          },3000)
+          );
+    },2000)
+  }
+
+  edi.util.removeLoading(init);
+});
+
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_0', 'todos_1').split('?')[0];
+    }
+  }
+};
+    </script>
+    <!-- Scripts usados para animação -->
+    <script src="../wilib/js/vendor/easeljs-0.8.1.min.js"></script>
+    <script src="../wilib/js/vendor/tweenjs-0.6.1.min.js"></script>
+    <script src="../wilib/js/vendor/movieclip-0.8.1.min.js"></script>
+    <script src="../img/licao01/introducao.js"></script>
+
+
+    <style>
+
+#canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+    #italico {
+      font-style: italic;
+    }
+
+    </style>
+  </head>
+
+  <body style="background-color:#D4D4D4">
+    <div id="texto"></div>
+    <canvas id="canvas" width="788" height="383" style="background-color:#FFFFFF"></canvas>
+  </body>
+
+</html>

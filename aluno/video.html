@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caixa</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+        }
+        #video_caixa_wrapper {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        #video_caixa {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+<div id="video_caixa_wrapper">
+    <video id="video_caixa" autoplay="autoplay">
+        <source src="http://videos.wilivro.com.br/caixa/caixa.mp4" type="video/mp4" />
+        <source src="http://videos.wilivro.com.br/caixa/caixa.webm" type="video/webm" />
+    </video>
+</div>
+</body>
+<script>
+    (function() {
+        var video = document.getElementById('video_caixa');
+        video.addEventListener('ended',function() {
+            document.location = 'licao01/todos_0.html';
+        });
+    })();
+</script>
+</html>

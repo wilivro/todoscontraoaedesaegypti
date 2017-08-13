@@ -1,0 +1,98 @@
+<!-- Desenvolvedor: Rodolfo -->
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/ligar'], function (edi) {
+
+  edi.setConfig({
+    titulo: 'Qual é a sua principal missão no combate ao <span class="italico">Aedes aegypti</span>? <br> Arraste a bolinha e ligue as partes que completam cada frase:',
+  });
+
+  var ligas = [
+  {
+    conteudo: 'Meu papel no combate ao <span class="italico">Aedes aegypti</span> é...',
+    dataCorreta: 0,
+    cor: '#91CC63'
+  }, {
+    conteudo: 'Meu papel no combate ao <span class="italico">Aedes aegypti</span> não é...',
+    dataCorreta: 1,
+    cor: '#0098FF'
+  }
+  ];
+
+  var alvos = [
+  {conteudo: 'Seguir as boas práticas e não deixar objetos espalhados que possam acumular água.', dataCorreta: 0},
+  {conteudo: 'Passar as informações e dicas que aprendi para o maior número de pessoas possível. ', dataCorreta: 0},
+  {conteudo: 'Eliminar os criadouros do mosquito com ajuda dos meus pais ou algum responsável.', dataCorreta: 0},
+  {conteudo: 'Executar tarefas de adultos, como subir no telhado para eliminar possíveis criadouros do mosquito, limpar a laje, calhas etc.', dataCorreta: 1},
+  {conteudo: 'Sair à procura dos mosquitos adultos para matá-los.', dataCorreta: 1},
+  ];
+
+  edi.ligar(ligas, alvos, function (a, b, c) {
+    //callback
+    //a:booleano = acertou/errou
+    //b:elementoHTML = liga
+    //c:elementoHTML = alvo
+  }, function (a) {
+  //
+  }, {
+    fontSize: 10,
+    ligaFixo: false,
+    erros: true,
+    liga: {
+      width: 230,
+      paddingTop: 10,
+      paddingLeft: 5,
+      paddingBottom: 10,
+      marginBottom: 12,
+      left: 60,
+      top: 90
+    },
+    alvo: {
+      width: 250,
+      paddingTop: 5,
+      paddingBottom: 5,
+      marginBottom: 20,
+      left: 460,
+      top: 5,
+      textAlign: 'center'
+    }
+  });
+
+});
+window.onload = function() {
+    parent = {
+          bloqueio: function() {},
+              seguir: function() {
+                      document.location = document.URL.replace('todos_9', 'todos_10').split('?')[0];
+                          }
+            }
+};
+    </script>
+
+    <style>
+      #conteudo {
+        background: radial-gradient(#fff, #fdfdfd);
+      }
+
+      .italico {
+        font-style: italic;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
