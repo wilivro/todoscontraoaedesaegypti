@@ -10,61 +10,61 @@
     <link rel="stylesheet" href="../wilib/css/estilo.css">
 
     <script>
-require(['../wilib/js/lib/alternativa_vf'], function (edi) {
+      require(['../wilib/js/lib/alternativa_vf'], function (edi) {
 
-  edi.setConfig({
-    sexo: "M",
-    tempoFinal: 5,
-    titulo: "Selecione <span id='negrito'>V</span> quando a alternativa for <span id='negrito'>Verdadeira</span> e <span id='negrito'>F</span>, quando for <span id='negrito'>Falsa</span>.",
-  });
+        edi.setConfig({
+          sexo: "M",
+          tempoFinal: 5,
+          titulo: "Selecione <span id='negrito'>V</span> quando a alternativa for <span id='negrito'>Verdadeira</span> e <span id='negrito'>F</span>, quando for <span id='negrito'>Falsa</span>.",
+        });
 
-  var alternativas  = [];
+        var alternativas  = [];
 
-  alternativas.push({
-    texto: 'Não é possível existir ovos do <span class="italico">Aedes aegypti</span> em uma caixa d’água vazia sem tampa.',
-    dataCorreta: false,
-    fraseFinal: '<span id="fonte">Esta alternativa é falsa. Mesmo vazia, uma caixa d’água sem tampa pode conter ovos do <span class="italico">Aedes aegypti</span>. Se houver ovos nas paredes do recipiente e a água da chuva voltar a enchê-lo, os ovos entram de novo no ciclo <br> de vida e dentro de dias <br> se tornarão mosquitos adultos.</span>'
-  });
+        alternativas.push({
+          texto: 'Não é possível existir ovos do <span class="italico">Aedes aegypti</span> em uma caixa d’água vazia sem tampa.',
+          dataCorreta: false,
+          fraseFinal: '<span id="fonte">Esta alternativa é falsa. Mesmo vazia, uma caixa d’água sem tampa pode conter ovos do <span class="italico">Aedes aegypti</span>. Se houver ovos nas paredes do recipiente e a água da chuva voltar a enchê-lo, os ovos entram de novo no ciclo <br> de vida e dentro de dias <br> se tornarão mosquitos adultos.</span>'
+        });
 
-  alternativas.push({
-    texto: "As piscinas que são tratadas com cloro na quantidade adequada não representam focos da dengue. ",
-    dataCorreta: true,
-  });
+        alternativas.push({
+          texto: "As piscinas que são tratadas com cloro na quantidade adequada não representam focos da dengue. ",
+          dataCorreta: true,
+        });
 
-  alternativas.push({
-    texto: 'O <span class="italico">Aedes aegypti</span> não consegue voar em alturas mais altas do que 1,5 metros, por isso os moradores de apartamentos estão livres do mosquito em suas residências.',
-    dataCorreta: false,
-    fraseFinal: '<span id="fonte">Esta alternativa é falsa. Apesar de não conseguir voar muito alto nem voar para longe, o <span class="italico">Aedes aegypti</span> pode estar nos andares mais altos dos prédios. Por incrível que pareça, o mosquito pode se locomover “pegando carona” dentro de objetos e até mesmo subir em um elevador, por isso o cuidado para evitar focos até mesmo em apartamentos é fundamental.</span>'
-  });
+        alternativas.push({
+          texto: 'O <span class="italico">Aedes aegypti</span> não consegue voar em alturas mais altas do que 1,5 metros, por isso os moradores de apartamentos estão livres do mosquito em suas residências.',
+          dataCorreta: false,
+          fraseFinal: '<span id="fonte">Esta alternativa é falsa. Apesar de não conseguir voar muito alto nem voar para longe, o <span class="italico">Aedes aegypti</span> pode estar nos andares mais altos dos prédios. Por incrível que pareça, o mosquito pode se locomover “pegando carona” dentro de objetos e até mesmo subir em um elevador, por isso o cuidado para evitar focos até mesmo em apartamentos é fundamental.</span>'
+        });
 
-  alternativas.push({
-    texto: 'Apenas a fêmea do mosquito pica o ser humano para sugar seu sangue.',
-    dataCorreta: true,
-  });
+        alternativas.push({
+          texto: 'Apenas a fêmea do mosquito pica o ser humano para sugar seu sangue.',
+          dataCorreta: true,
+        });
 
-  edi.alternativa_vf(alternativas, function (a, b, c) {
+        edi.alternativa_vf(alternativas, function (a, b, c) {
 
-  }, function (a) {
+        }, function (a) {
 
-  }, {
-    width: 730,
-    left: 20,
-    top: 30,
-    margin: '10px 0 15px 0',
-    fontSize: 13
-  });
-});
-window.onload = function() {
-  parent = {
-    bloqueio: function() {},
-    seguir: function() {
-      document.location = '/';
-    }
-  }
-};
-    </script>
+        }, {
+          width: 730,
+          left: 20,
+          top: 30,
+          margin: '10px 0 15px 0',
+          fontSize: 13
+        });
+      });
+      window.onload = function() {
+        parent = {
+          bloqueio: function() {},
+          seguir: function() {
+            document.location = document.URL.replace('todos_15', 'todos_16').split('?')[0];
+          }
+        }
+      };
+  </script>
 
-    <style>
+<style>
 
 #negrito {
   font-style: italic;

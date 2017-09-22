@@ -104,7 +104,14 @@
             });
 
         });
-
+        window.onload = function() {
+          parent = {
+            bloqueio: function() {},
+            seguir: function() {
+              document.location = '/';
+            }
+          }
+        };
     </script>
 
     <style>

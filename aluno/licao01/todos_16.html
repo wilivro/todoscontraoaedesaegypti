@@ -132,6 +132,14 @@
       });
 
     });
+    window.onload = function() {
+      parent = {
+        bloqueio: function() {},
+        seguir: function() {
+          document.location = document.URL.replace('todos_16', 'todos_17').split('?')[0];
+        }
+      }
+    };
   </script>
 
   <style>
