@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title>Lição 10 Peça 12</title>
+  <meta charset="utf-8">
+  <script src="../wilib/js/lib/require.js"></script>
+  <script src="../wilib/js/app.js"></script>
+  <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+  <link rel="stylesheet" href="../wilib/css/estilo.css">
+  <link rel="stylesheet" href="../wilib/css/animate.css">
+
+
+  <script>
+    require(['../wilib/js/lib/edi'], function(edi) {
+      edi.iniciar({
+        icone: 'exclamacao',
+        titulo: 'Clique sobre as setas para se movimentar no local, <br>observe o mapa, e encontre o lixo jogado no terreno.',
+        sexo: "F"
+      });
+
+      var preloader = new edi.util.Preloader();
+      
+      var  manifest = [      
+        {id:'caixa', src: '../img/licao01/16/caixa.svg'},
+        {id:'bacia', src: '../img/licao01/16/bacia.svg'},
+        {id:'garrafas', src: '../img/licao01/16/garrafas.svg'},
+        {id:'garrafa1', src: '../img/licao01/16/garrafa1.svg'},
+        {id:'garrafa2', src: '../img/licao01/16/garrafa2.svg'},
+        {id:'minimapa', src: '../img/licao01/16/minimapa.svg'},      
+        {id:'caixa_', src: '../img/licao01/16/caixa_.svg'},
+        {id:'bacia_', src: '../img/licao01/16/bacia_.svg'},
+        {id:'garrafas_', src: '../img/licao01/16/garrafas_.svg'},
+        {id:'garrafa1_', src: '../img/licao01/16/garrafa1_.svg'},
+        {id:'garrafa2_', src: '../img/licao01/16/garrafa2_.svg'},
+      ];
+
+      preloader.createManifest(manifest);
+      
+      preloader.loadAll(function(){
+        edi.util.removeLoading();
+      });      
+
+      var // elementos de navegacão
+        $navConteudo = $('#nav-conteudo .inner'),
+        $masc = $('#minimap .masc'),
+        $btns = $('.botao'),
+        pos = {
+          x: 0,
+          y: 0
+        },
+        mascPos = {
+          x: -80,
+          y: -80
+        };
+
+      $btns.click(clique);
+
+      // tratando cliques nos botões de navegação
+      function clique() {
+        var $self = $(this),
+          id = $self.attr('id');
+
+        switch (id) {
+          case 'up':
+            pos.y += 208;
+            mascPos.y -= 40;
+            break;
+          case 'right':
+            pos.x -= 208;
+            mascPos.x += 40;
+            break;
+          case 'down':
+            pos.y -= 208;
+            mascPos.y += 40;
+            break;
+          case 'left':
+            pos.x += 208;
+            mascPos.x -= 40;
+            break;
+        }
+
+        // movimentando view geral
+        $navConteudo.animate({
+          left: pos.x,
+          top: pos.y
+        });
+
+        // movimentando mini-mapa
+        $masc.animate({
+          left: mascPos.x,
+          top: mascPos.y
+        });
+
+        // tratando limites da view e ocultando botes de navegacão
+        if (pos.y === 0) {
+          $('.botao#up').fadeOut();
+        } else {
+          $('.botao#up').fadeIn();
+        }
+
+        if (pos.x === -416) {
+          $('.botao#right').fadeOut();
+        } else {
+          $('.botao#right').fadeIn();
+        }
+
+        if (pos.y === -416) {
+          $('.botao#down').fadeOut();
+        } else {
+          $('.botao#down').fadeIn();
+        }
+
+        if (pos.x === 0) {
+          $('.botao#left').fadeOut();
+        } else {
+          $('.botao#left').fadeIn();
+        }
+      } // fim clique
+
+      // tratando cliques nos alvos
+      var cliques = 0;
+      $('.alvo').click(function() {
+        var self = $(this).off().fadeOut();
+        $('.revela').each(function(i, data) {
+          if ($(data).attr('data-revela') == self.attr('data-revela'))
+            $(data).attr('src', self.attr('src'));
+        });
+
+        cliques++;
+        if (cliques === 6)
+          edi.finalizar();
+      });
+
+    });
+  </script>
+
+  <style>
+    #principal {
+      background: #f2f2f2;
+    }
+
+    #revelas {
+      width: 100px;
+      height: 380px;
+      position: absolute;
+      left: 10px;
+      top: 0;
+    }
+
+    #revelas .revela {
+      position: absolute;
+      left: 15px;
+    }
+
+    #navegacao {
+      width: 208px;
+      height: 208px;
+      position: absolute;
+      left: 160px;
+      top: 87px;
+      border: 35px solid #ccc;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    #navegacao .botao {
+      background: #fff;
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    #navegacao .botao i {
+      margin-left: 3px;
+    }
+
+    #navegacao .botao#left {
+      left: -28px;
+      top: 95px;
+      display: none;
+    }
+
+    #navegacao .botao#up {
+      left: 95px;
+      top: -28px;
+      display: none;
+    }
+
+    #navegacao .botao#down {
+      left: 95px;
+      bottom: -28px;
+    }
+
+    #navegacao .botao#right {
+      right: -28px;
+      top: 95px;
+    }
+
+    #minimap {
+      background: url(../img/licao01/16/minimapa.svg);
+      background-size: 100% 100%;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 500px;
+      top: 145px;
+      border: 15px solid #ccc;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    #minimap .masc {
+      position: absolute;
+      left: -80px;
+      top: -80px;
+    }
+
+    #nav-conteudo {
+      width: 208px;
+      height: 208px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+    }
+
+    #nav-conteudo .inner {
+      width: 624px;
+      height: 624px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #nav-conteudo .inner .alvo {
+      position: absolute;
+      z-index: 1010;
+      cursor: pointer;
+    }
+    .inner {
+      background-image: url('../img/licao01/16/minimapa.svg');
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="revelas">
+    <!-- Sombras -->
+    <img class="revela" data-revela="1" src="../img/licao01/16/caixa_.svg" style="top: 295px; width: 105px;">
+    <img class="revela" data-revela="2" src="../img/licao01/16/garrafa1_.svg" style="top: 79px; left: 90px; width: 30px;">
+    <img class="revela" data-revela="3" src="../img/licao01/16/garrafa2_.svg" style="top: 83px; left: 10px; width: 45px;">
+    <img class="revela" data-revela="4" src="../img/licao01/16/garrafas_.svg" style="top: 170px; left: 75px; width: 70px;">
+    <img class="revela" data-revela="5" src="../img/licao01/16/bacia_.svg" style="top: 160px; left: 0; width: 70px;">
+    <img class="revela" data-revela="6" src="../img/licao01/16/pneu_.svg" style="top: 225px; left: 5px; width: 100px;">
+  </div>
+
+  <div id="navegacao">
+    <!-- botões de navegacão -->
+    <div class="botao" id="left"><i class="fa fa-arrow-left"></i></div>
+    <div class="botao" id="up"><i class="fa fa-arrow-up"></i></div>
+    <div class="botao" id="right"><i class="fa fa-arrow-right"></i></div>
+    <div class="botao" id="down"><i class="fa fa-arrow-down"></i></div>
+
+    <!-- view geral -->
+    <div id="nav-conteudo">
+      <div class="inner">
+        <div class="canvas"></div>
+
+        <!-- Itens do mapa -->
+        <img class="alvo" data-revela="2" src="../img/licao01/16/garrafa1.svg" style="left: 340px; top: 10px; width: 10px;">
+        <img class="alvo" data-revela="1" src="../img/licao01/16/caixa.svg" style="left: 145px; top: 80px; width: 30px;">
+        <img class="alvo" data-revela="3" src="../img/licao01/16/garrafa2.svg" style="left: 120px; top: 288px; width: 25px;">
+        <img class="alvo" data-revela="4" src="../img/licao01/16/garrafas.svg" style="left: 552px; top: 354px; width: 30px;">
+        <img class="alvo" data-revela="5" src="../img/licao01/16/bacia.svg" style="left: 303px; top: 527px; width: 36px;">
+        <img class="alvo" data-revela="6" src="../img/licao01/16/pneu.svg" style="left: 440px; top: 510px; width: 50px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="minimap">
+    <img class="masc" src="../wilib/img/svg/masc.svg">
+  </div>
+</body>
+
+</html>

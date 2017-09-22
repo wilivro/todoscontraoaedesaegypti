@@ -1,0 +1,236 @@
+<!-- Desenvolvedor: Leandro Fortaleza -->
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Lição 08 Peça 61</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+        $(function () {
+            require(['../wilib/js/lib/arrasta'], function (edi) {
+
+                edi.setConfig({
+                    icone: 'exclamacao',
+                    titulo: 'Praticar a reciclagem é uma ótima maneira de evitar que o lixo vá parar<br/>nos rios e oceanos, além disso, o lixo pode se tornar algum objeto útil.<br/>Faça a coleta seletiva arrastando cada item para a lixeira correspondente.'
+                });
+
+                var arrArrasta = [
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/postit.svg); width:55px; height:55px;"></div>', dataCorreta: '1'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/copo.svg); width:55px; height:55px;"></div>', dataCorreta: '2'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/carta.svg); width:55px; height:55px;"></div>', dataCorreta: '1'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/jornal.svg); width:55px; height:55px;"></div>', dataCorreta: '1'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/lataatum.svg); width:55px; height:55px;"></div>', dataCorreta: '3'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/latanova.svg); width:55px; height:55px;"></div>', dataCorreta: '3'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/latavelha.svg); width:55px; height:55px;"></div>', dataCorreta: '3'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/garrafapet.svg); width:55px; height:55px;"></div>', dataCorreta: '2'},
+                    {arrasta: '<div class="imagem" style="background-image: url(../img/licao01/17/garrafavidro.svg); width:55px; height:55px;"></div>', dataCorreta: '4'},
+                ];
+
+                arrArrasta.sort(function () {
+                    return 0.5 - Math.random()
+                });
+
+                for (var i = 0; i < arrArrasta.length; i++) {
+                    $('<div>')
+                            .addClass('arrasta')
+                            .attr('data-correta', arrArrasta[i].dataCorreta)
+                            .html(arrArrasta[i].arrasta)
+                            .appendTo('#ctArrasta');
+                }
+
+                var config = {
+                    alvoFixo: true,
+                    colorirFilho: true,
+                    multAlvo: true,
+                    arrastaAbsolute: false,
+                    target: false,
+                    destroy: true
+                };
+
+                edi.arrasta('arrasta', 'alvo', function(a, b, c) {
+
+                    if (a) {
+                        b
+                        .css('left', '40%')                      
+                    };
+
+                    b
+                        .find('div').off().transition({
+                            scale: 1
+                        });
+
+                }, function() {
+
+                        $('#texto').transition({
+                            scale: 1,
+                            top: 80,
+                            left: 320,
+                        }, 1000)
+
+                }, config);
+
+                    $('#texto').transition({
+                            scale: 0,
+                            top: 50,
+                            left: 320,
+                        },0)
+
+
+                 $('.imagem').mouseenter(function () {
+                    $(this)
+                            .css({
+                                zIndex: 10
+                            })
+                            .stop(true, true)
+                            .transition({
+                                scale: 1.5
+                            });
+                });
+
+                $('.imagem').mouseleave(function () {
+                    $(this)
+                            .css({
+                                zIndex: 0
+                            })
+                            .transition({
+                                scale: 1
+                            });
+                }); 
+            });
+
+        });
+
+    </script>
+
+    <style>
+        #ctArrasta {
+            position: absolute;
+            width: 240px;
+            height: 210px;
+            top: -80px;
+            left: 45px;
+            text-align: center;
+        }
+
+        #arrasta {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 118px;
+            height: 170px;
+            padding: 15px 12px 15px 12px;
+        }
+
+        .arrasta {
+            display: inline-block;
+            margin: 0 0 15px 8px;
+        }
+
+        .alvo {
+            position: absolute;
+            width: 85px;
+            height: 105px;
+            text-align: center;                      
+        }
+
+        #bola {
+            position: absolute;
+            background-color: #C5D3DB;
+            border-radius: 50%;
+            width: 256px;
+            height: 256px;
+            left: 50px;
+            top: 90px;
+            box-shadow: -8px 0px 0px #E5E5E5;
+        }
+
+        .imagem{
+            background-size: 100% 100%;
+            width: 50px;
+            height: 10px;
+        }
+                 
+         
+        .lata {
+            position: absolute;
+            width: 105px;
+            height: 125px;
+            top: 240px;
+        }
+        
+
+        #texto {
+            position: absolute;
+
+            width: 450px;
+            height: 295px;
+            
+            background-color: #fff;
+
+            text-align: center;
+            opacity: 0.7;
+
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        #centraliza{
+            
+            position: relative;
+            width: 450px;
+            height: 295px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+        }
+
+        #titulo{
+
+            display: inline-block;
+            width: 450px;
+            color: #2F211F;
+            text-shadow: 1px 3px 4px #999;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="ctArrasta">
+    <div id="arrasta"></div>
+</div>
+
+    <div class="alvo" style="left:679px; top:250px;"data-correta="4"></div>
+    <div class="alvo" style="left:562px; top:250px;"data-correta="3"></div>
+    <div class="alvo" style="left:447px; top:250px;"data-correta="2"></div>
+    <div class="alvo" style="left:330px; top:250px;"data-correta="1"></div>
+        
+    <div id="bola"></div>
+
+    <div class="lata" style="background-image: url(../img/licao01/17/lixopapel.svg); left: 320px;"></div>
+    <div class="lata" style="background-image: url(../img/licao01/17/lixoplastico.svg); left: 438px;"></div>
+    <div class="lata" style="background-image: url(../img/licao01/17/lixometal.svg); left: 553px;"></div>
+    <div class="lata" style="background-image: url(../img/licao01/17/lixovidro.svg);  left: 671px;"></div>
+
+    <div id="texto">
+
+        <div id="centraliza">
+
+            <div id="titulo">Muito bem! Pratique a coleta seletiva e reciclagem!</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
