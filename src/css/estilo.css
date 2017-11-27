@@ -2413,6 +2413,7 @@ textarea.w-select {
 
 .section-3 {
   position: relative;
+  overflow: auto;
 }
 
 .div-block-5 {
@@ -3217,6 +3218,10 @@ a:-webkit-any-link {
   font-style: normal;
 }
 
+#participantes {
+  overflow: auto;
+}
+
 #participantes h3 {
   text-align: left;
   margin-left: 5%;
@@ -3270,9 +3275,7 @@ a:-webkit-any-link {
   text-align: center;
 }
 
-#participantes td.city {
-  width: 150px;
-}
+#participantes td.city {}
 
 #participantes .thead-inverse th {
   color: #fff;
@@ -3282,4 +3285,8 @@ a:-webkit-any-link {
 #participantes .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #eceeef;
+}
+
+.ml-1 {
+  margin-left: 10px;
 }
