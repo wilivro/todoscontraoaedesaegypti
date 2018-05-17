@@ -2291,6 +2291,12 @@ textarea.w-select {
   margin-bottom: 15px;
 }
 
+.img-rodape {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 120px;
+}
+
 .column {
   display: -webkit-box;
   display: -webkit-flex;
