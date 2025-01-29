@@ -1,69 +1,60 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-      <title>
-        Área do Professor - Todos contra o Aedes aegypti
-      </title>
-      <meta content="Área do Professor - Todos contra o Aedes aegypti" property="og:title">
-	    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-		  <link href="../src/css/estilo.css" rel="stylesheet" type="text/css"/>    
-	    <link href="favicon.ico" rel="icon" type="image/x-icon"/> 
-  </head>
-  <body class="body-2">
-    <div class="section-4">
-      <div class="div-block-12">
-        <div class="container-7 w-container">
-          <div class="row w-row">
-            <div class="column-6 w-col w-col-6 w-col-tiny-tiny-stack">
-              <h1 class="heading-7">
-                ÁREA DO PROFESSOR
-              </h1>
-              <p class="paragraph-2">
-                Professor(a), nessa área você encontrará outros materiais que te auxiliarão no trabalho em sala de aula. Faça o seu cadastro na plataforma e utilize o código de matrícula presente na 1ª página do livro do professor para acessar o conteúdo.
-              </p>
-	      <div style="text-align: center; margin-top: 14px; ">
-		    <img src="../src/img/logo-cx.png"/>
-	      </div>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Livro Combatentes do Aedes Aegypti</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="topo">
+		    <p class="frase-topo">TODOS CONTRA O AEDES AEGYPTI</p>
             </div>
-            <div class="column-6-2 w-col w-col-6 w-col-tiny-tiny-stack">
-              <h1 class="heading-7">
-                lOGIN
-              </h1>
-              <div class="form-block w-form">
-                <form class="form w-clearfix" data-name="Login" action="https://wiquadro.com.br/site/login" id="wf-form-Login" method="POST" name="wf-form-Login">
-                  <label class="field-label" for="LoginForm_username">
-                    e-mail
-                  </label>
-                  <input class="text-field w-input" data-name="LoginForm_username" id="LoginForm_username" maxlength="50" name="LoginForm[username]" required="required" type="text"/>
-                  <label class="field-label-2" for="LoginForm_password">
-		    SENHA
-	          </label>
-		  <input class="text-field-2 w-input" data-name="LoginForm_password" maxlength="32" name="LoginForm[password]" id="LoginForm_password" type="password" required="required" type="password"/>
-                  <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="LOGIN"/>
-                  <a class="submit-button-2 w-inline-block" href="https://wiquadro.com.br/site/registro">
-                    <div class="text-block-3">
-                      CADASTRAR
-                    </div>
-                  </a>
-                </form>
-                <div class="w-form-done">
-                  <div>
-                    Thank you! Your submission has been received!
-                  </div>
-                </div>
-                <div class="w-form-fail">
-                  <div>
-                    Oops! Something went wrong while submitting the form.
-                  </div>
-                </div>
-              </div>
+            <div class="meio1">
+				<div id="login" class="row">
+					<div class="row"><!-- Row dentro de row-->
+					    <div class="main-login">
+					        <!-- <h1 style="text-align:center;font-family:Roboto">LOGIN</h1> -->
+					        <form method="post" action="http://wiquadro.com.br/site/login" class="form-login">
+					            <div class="form-group">
+			                                <label for="Usuario_Email">Email ou CPF</label>
+			                                <input class="form-control" tabindex="1" name="LoginForm[username]" id="LoginForm_username" type="text" />		                		            </div>
+					            <div class="form-group">
+					                <a class="pull-right esqueci-senha" tabindex="5" href="http://wiquadro.com.br/site/esqueciminhasenha">Esqueci minha senha</a>
+					                <label for="Usuario_Senha">Senha</label>		                <input class="form-control" tabindex="2" name="LoginForm[password]" id="LoginForm_password" type="password" maxlength="32" />		                		            </div>
+					            <div class="col-xs-6" style="padding:0;padding-right:10px">
+					            	<button type="submit" class="btn btn-block btn-p1" style="background:#f1b019;height:50px;font-size:20px;text-align:center;font-family:Roboto;letter-spacing:-1px" tabindex="3">LOGIN</button>
+					            </div>
+					            <div class="col-xs-6" style="padding:0;dding-left:10px">
+					            	<a href="http://wiquadro.com.br/site/registro/tipo/professor" tabindex="4"  >
+					            <div style="background:#e3584f;color:white; width:100%;height:50px;line-height:50px;font-size:20px;text-align:center;font-family:Roboto;letter-spacing:-1px">CADASTRAR</div></a>
+					            </div>
+
+					        </form>
+					    </div>
+					</div>
+				</div>
             </div>
-          </div>
+            <div class="meio2">
+                <img src="../images/capa-01.png"/>
+            </div>
+            <div class="footer">
+                <img src="../images/ensinart_logo.svg"/>
+            </div>
         </div>
-      </div>
-    </div>
-	  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-   	<script src="../src/script.js"></script>
-  </body>
+    </body>
+
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53173925-2', 'auto');
+		ga('send', 'pageview');
+    </script>
 </html>

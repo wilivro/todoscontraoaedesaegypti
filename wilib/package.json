@@ -1,0 +1,23 @@
+{
+  "name": "wilib",
+  "version": "1.0.0",
+  "description": "wilib",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilivro/wilib.git"
+  },
+  "author": "Danilo Thiago",
+  "license": "Copyright",
+  "bugs": {
+    "url": "https://github.com/wilivro/wilib/issues"
+  },
+  "homepage": "https://github.com/wilivro/wilib#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2"
+  }
+}

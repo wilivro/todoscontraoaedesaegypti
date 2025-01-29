@@ -1,0 +1,128 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="397px" height="385px" viewBox="0 0 397 385">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="341.9" y1="112.7" x2="351.5" y2="112.7" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#000000"/>
+
+<stop  offset="100%" stop-color="#777777"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="344.65" y1="-30.1375" x2="344.65" y2="-42.8625" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#C3C3C3"/>
+
+<stop  offset="100%" stop-color="#FFFFFF"/>
+</linearGradient>
+
+<linearGradient id="Gradient_3" gradientUnits="userSpaceOnUse" x1="344.05" y1="204.5625" x2="344.05" y2="200.1375" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#C3C3C3"/>
+
+<stop  offset="100%" stop-color="#FFFFFF"/>
+</linearGradient>
+
+<linearGradient id="Gradient_4" gradientUnits="userSpaceOnUse" x1="153.6" y1="207.2125" x2="153.6" y2="197.88750000000002" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#000000"/>
+
+<stop  offset="100%" stop-color="#777777"/>
+</linearGradient>
+
+<linearGradient id="Gradient_5" gradientUnits="userSpaceOnUse" x1="534.5" y1="207.1625" x2="534.5" y2="197.8375" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#000000"/>
+
+<stop  offset="100%" stop-color="#777777"/>
+</linearGradient>
+
+<g id="Layer0_0_MEMBER_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 351.45 -84.8
+L 341.9 -84.8 341.9 299.15 351.45 299.15 351.45 -84.8 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_0_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 526.95 -28.35
+L 161.3 -26.65 161.3 203 526.95 201.3 526.95 -28.35 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_1_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 160 -47.35
+L 160 -26.45 529.3 -26.5 529.3 -47.4 160 -47.35 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_2_FILL">
+<path fill="url(#Gradient_3)" stroke="none" d="
+M 526.95 205.85
+L 526.95 198.55 161.25 198.55 161.25 205.85 526.95 205.85 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_3_FILL">
+<path fill="url(#Gradient_4)" stroke="none" d="
+M 161.25 197.9
+L 146 197.85 146 207.15 161.25 207.2 161.25 197.9 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_4_FILL">
+<path fill="url(#Gradient_5)" stroke="none" d="
+M 542.2 197.85
+L 526.9 197.9 526.9 207.2 542.2 207.15 542.2 197.85 Z"/>
+</g>
+
+<path id="Layer0_0_1_STROKES" stroke="#666666" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 159.65 -48.1
+L 310.2 -84.9
+M 382.75 -84.9
+L 528 -46.25"/>
+
+<path id="Layer0_0_MEMBER_1_MEMBER_0_1_STROKES" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 526.95 201.3
+L 161.3 203 161.3 -26.65 526.95 -28.35 526.95 201.3 Z"/>
+
+<path id="Layer0_0_MEMBER_1_MEMBER_1_1_STROKES" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 160 -47.35
+L 529.3 -47.4"/>
+
+<path id="Layer0_0_MEMBER_1_MEMBER_1_2_STROKES" stroke="#999999" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 529.3 -26.5
+L 160 -26.45"/>
+
+<path id="Layer0_0_MEMBER_1_MEMBER_2_1_STROKES" stroke="#DEDEDE" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 526.95 205.85
+L 161.25 205.85 161.25 198.55 526.95 198.55 526.95 205.85 Z"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_0_FILL"/>
+
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_1_FILL"/>
+
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_1_1_STROKES"/>
+
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_1_2_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_2_FILL"/>
+
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_2_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_3_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -145.6,85.4) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_4_FILL"/>
+</g>
+</svg>

@@ -1,0 +1,150 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500">
+<defs>
+<radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="308.6125" fx="0" fy="0" gradientTransform="matrix( 1, 0, 0, 1, -2,0) " spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFFFF" />
+
+<stop  offset="62.35294117647059%" stop-color="#FFFFFF" stop-opacity="0.5980392156862745"/>
+
+<stop  offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+
+<filter id="Filter_1" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.47 0" result="result1"/>
+</filter>
+
+<g id="gr_raio_0_Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 703.45 176
+L 703.45 99.9 0 0 703.45 176 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 0.9117279052734375, 0, 0, 0.9117279052734375, 250,253.45) ">
+<g transform="matrix( 1, 0, 0, 1, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.955047607421875, -0.29644775390625, 0.29644775390625, 0.955047607421875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.83172607421875, -0.55517578125, 0.55517578125, 0.83172607421875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.6302490234375, -0.7763824462890625, 0.7763824462890625, 0.6302490234375, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.376678466796875, -0.92633056640625, 0.92633056640625, 0.376678466796875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.08966064453125, -0.9959564208984375, 0.9959564208984375, 0.08966064453125, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.2130279541015625, -0.977020263671875, 0.977020263671875, -0.2130279541015625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.5343170166015625, -0.845245361328125, 0.845245361328125, -0.5343170166015625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.7577056884765625, -0.65252685546875, 0.65252685546875, -0.7577056884765625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.9133758544921875, -0.406982421875, 0.406982421875, -0.9133758544921875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.992950439453125, -0.118133544921875, 0.118133544921875, -0.992950439453125, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.9841156005859375, 0.1772003173828125, -0.1772003173828125, -0.9841156005859375, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.889404296875, 0.4569549560546875, -0.4569549560546875, -0.889404296875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.71746826171875, 0.69647216796875, -0.69647216796875, -0.71746826171875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.4832916259765625, 0.8753662109375, -0.8753662109375, -0.4832916259765625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( -0.203033447265625, 0.9790802001953125, -0.9790802001953125, -0.203033447265625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.0872802734375, 0.99609375, -0.99609375, 0.0872802734375, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.374603271484375, 0.9270782470703125, -0.9270782470703125, 0.374603271484375, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.62860107421875, 0.777618408203125, -0.777618408203125, 0.62860107421875, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.828216552734375, 0.56024169921875, -0.56024169921875, 0.828216552734375, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g transform="matrix( 0.9556884765625, 0.2940673828125, -0.2940673828125, 0.9556884765625, -0.25,-0.4) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use filter="url(#Filter_1)" xlink:href="#gr_raio_0_Layer0_0_FILL"/>
+</g>
+</g>
+</g>
+</svg>

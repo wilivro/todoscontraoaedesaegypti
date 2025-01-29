@@ -1,0 +1,186 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="788px" height="383px" viewBox="0 0 788 383">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="559.5125" y1="767.8" x2="1173.7875" y2="197.59999999999997" spreadMethod="pad">
+<stop  offset="1.1764705882352942%" stop-color="#1F55FF"/>
+
+<stop  offset="88.62745098039215%" stop-color="#3C99FF"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="319.66249999999997" y1="441.3" x2="685.6375" y2="441.3" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.27058823529411763"/>
+</linearGradient>
+
+<linearGradient id="Gradient_3" gradientUnits="userSpaceOnUse" x1="898" y1="850.7375" x2="1005.3" y2="500.86249999999995" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.5019607843137255"/>
+</linearGradient>
+
+<linearGradient id="Gradient_4" gradientUnits="userSpaceOnUse" x1="1097.5875" y1="657.525" x2="457.8125" y2="523.975" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#51E7FF" stop-opacity="0.4980392156862745"/>
+</linearGradient>
+
+<linearGradient id="Gradient_5" gradientUnits="userSpaceOnUse" x1="998.1375" y1="770.95" x2="757.1624999999999" y2="372.75" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.3215686274509804"/>
+</linearGradient>
+
+<linearGradient id="Gradient_6" gradientUnits="userSpaceOnUse" x1="1364.1375" y1="826.85" x2="1123.1625000000001" y2="428.65" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.5019607843137255"/>
+</linearGradient>
+
+<linearGradient id="Gradient_7" gradientUnits="userSpaceOnUse" x1="1289.775" y1="46.71249999999998" x2="993.5250000000001" y2="405.6875" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9AD5FF" stop-opacity="0.32941176470588235"/>
+</linearGradient>
+
+<linearGradient id="Gradient_8" gradientUnits="userSpaceOnUse" x1="373.71250000000003" y1="484.8" x2="739.6875" y2="484.8" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.27058823529411763"/>
+</linearGradient>
+
+<linearGradient id="Gradient_9" gradientUnits="userSpaceOnUse" x1="1094.8625" y1="791.975" x2="446.23749999999995" y2="582.025" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#51E7FF" stop-opacity="0.4980392156862745"/>
+</linearGradient>
+
+<linearGradient id="Gradient_10" gradientUnits="userSpaceOnUse" x1="413.56249999999994" y1="508.25" x2="779.5374999999999" y2="508.25" spreadMethod="pad">
+<stop  offset="0%" stop-color="#1F55FF"/>
+
+<stop  offset="100%" stop-color="#9CB4FF" stop-opacity="0.27058823529411763"/>
+</linearGradient>
+
+<g id="S_mbolo_1_0_Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 1260.7 674.2
+L 1260.7 291.25 472.7 291.25 472.7 674.2 1260.7 674.2 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_1_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 740.45 676.25
+Q 747.8798828125 578.53984375 685.65 441.3 647.858984375 358.02265625 597.6 289.3
+L 472.7 289.3 472.7 670.75
+Q 475.353125 673.5267578125 478 676.25
+L 740.45 676.25 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_2_FILL">
+<path fill="url(#Gradient_3)" stroke="none" d="
+M 1261.65 524.05
+Q 1255.689453125 521.212109375 1249.15 518.55 1157.35 481.2 1005.3 500.85 853.3 520.45 730.1 585.55 647.3515625 629.2572265625 610.15 676.3
+L 1261.65 676.3 1261.65 524.05 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_3_FILL">
+<path fill="url(#Gradient_4)" stroke="none" d="
+M 989.4 676.25
+Q 1043.6306640625 667.5025390625 1097.6 657.55 1188.23828125 640.837890625 1261.65 623.75
+L 1261.65 444
+Q 1169.319140625 444.1703125 1050.9 451.5 757.4859375 469.6095703125 471.7 521.45
+L 471.7 676.25 989.4 676.25 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_4_FILL">
+<path fill="url(#Gradient_5)" stroke="none" d="
+M 820.45 289.35
+Q 788.68359375 326.7373046875 757.15 372.75 656.684375 519.3916015625 612.4 675.3
+L 1057.15 675.3
+Q 1120.891015625 559.5005859375 1150.95 438.1 1172.128515625 352.6904296875 1170.45 289.35
+L 820.45 289.35 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_5_FILL">
+<path fill="url(#Gradient_6)" stroke="none" d="
+M 1262.65 289.35
+L 1239.15 289.35
+Q 1180.746484375 344.607421875 1123.15 428.65 1040.792578125 548.8603515625 996.2 675.3
+L 1262.65 675.3 1262.65 289.35 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_6_FILL">
+<path fill="url(#Gradient_7)" stroke="none" d="
+M 993.55 405.7
+Q 1131.25 442.95 1262.65 444.05
+L 1262.65 297.7 752.1 297.7
+Q 840.05 364.2 993.55 405.7 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_7_FILL">
+<path fill="url(#Gradient_8)" stroke="none" d="
+M 794.45 675.3
+Q 788.37265625 592.14140625 739.7 484.8 689.8134765625 374.868359375 618.2 290.3
+L 472.7 290.3 472.7 607.3 470.65 607.3 470.65 648.7
+Q 480.98515625 662.3115234375 491.8 675.3
+L 794.45 675.3 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_8_FILL">
+<path fill="url(#Gradient_9)" stroke="none" d="
+M 1261.65 674.3
+L 1261.65 596.5
+Q 1176.9083984375 587.7333984375 1072.4 581.85 769.7587890625 564.580078125 470.7 580.65
+L 470.7 674.3 1261.65 674.3 Z"/>
+</g>
+
+<g id="S_mbolo_1_0_Layer0_9_FILL">
+<path fill="url(#Gradient_10)" stroke="none" d="
+M 831.8 675.3
+Q 821.4953125 600.755078125 779.55 508.25 722.9201171875 383.45859375 638.3 291.35
+L 471.65 291.35 471.65 675.3 831.8 675.3 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1.0240020751953125, 0, 0, 1.0516815185546875, -494.85,-316.25) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_2_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_3_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_4_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_5_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,-7) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_6_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_7_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_8_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_1_0_Layer0_9_FILL"/>
+</g>
+</g>
+</svg>

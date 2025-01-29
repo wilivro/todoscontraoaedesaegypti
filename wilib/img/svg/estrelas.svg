@@ -1,0 +1,57 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="327px" height="104px" viewBox="0 0 327 104">
+
+<view id='icon-whiteStar' viewBox='0, 0, 108, 104' />
+<view id='icon-blueStar' viewBox='109, 0, 108, 104' />
+<view id='icon-redStar' viewBox='218, 0, 108, 104' />
+
+<defs>
+<g id="whiteStar">
+<path fill="#FFFFFF" stroke="none" d="
+M 67.45 38.5
+L 54.9 0 40.5 37.85 0 37.9 31.55 63.3 19.1 101.85 53 79.7 85.8 103.45 75.2 64.35 107.9 40.5 67.45 38.5 Z"/>
+</g>
+
+<g id="blueStar">
+<path fill="#0060B6" stroke="none" d="
+M 176.9 38.8
+L 164.35 0.3 149.95 38.15 109.45 38.2 141 63.6 128.55 102.15 162.45 80 195.25 103.75 184.65 64.65 217.35 40.8 176.9 38.8 Z"/>
+</g>
+
+<g id="redStar">
+<path fill="#FF0000" stroke="none" d="
+M 273.4 0.3
+L 259 38.15 218.5 38.2 250.05 63.6 237.6 102.15 271.5 80 304.3 103.75 293.7 64.65 326.4 40.8 285.95 38.8 273.4 0.3 Z"/>
+</g>
+
+<path id="Layer0_0_MEMBER_0_1_STROKES" stroke="#CCCCCC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 54.9 0
+L 67.45 38.5 107.9 40.5 75.2 64.35 85.8 103.45 53 79.7 19.1 101.85 31.55 63.3 0 37.9 40.5 37.85 54.9 0 Z"/>
+
+<path id="Layer0_0_MEMBER_1_1_STROKES" stroke="#CCCCCC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 164.35 0.3
+L 176.9 38.8 217.35 40.8 184.65 64.65 195.25 103.75 162.45 80 128.55 102.15 141 63.6 109.45 38.2 149.95 38.15 164.35 0.3 Z"/>
+
+<path id="Layer0_0_MEMBER_2_1_STROKES" stroke="#CCCCCC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 273.4 0.3
+L 285.95 38.8 326.4 40.8 293.7 64.65 304.3 103.75 271.5 80 237.6 102.15 250.05 63.6 218.5 38.2 259 38.15 273.4 0.3 Z"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#whiteStar"/>
+
+<use xlink:href="#Layer0_0_MEMBER_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#blueStar"/>
+
+<use xlink:href="#Layer0_0_MEMBER_1_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#redStar"/>
+
+<use xlink:href="#Layer0_0_MEMBER_2_1_STROKES"/>
+</g>
+</svg>

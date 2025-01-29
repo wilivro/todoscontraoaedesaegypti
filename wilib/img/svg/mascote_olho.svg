@@ -1,0 +1,48 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="73px" height="23px" viewBox="0 0 73 23">
+<defs>
+<g id="Interpolar_2_0_Layer0_0_MEMBER_0_FILL">
+<path fill="#000000" stroke="none" d="
+M 21.5 -8.05
+Q 18.95 -4.85 18.95 -0.3 18.95 4.25 21.5 7.5 24.1 10.65 27.7 10.65 31.3 10.65 33.85 7.5 36.4 4.25 36.4 -0.3 36.4 -4.85 33.85 -8.05 31.3 -11.25 27.7 -11.25 24.1 -11.25 21.5 -8.05 Z"/>
+</g>
+
+<g id="Interpolar_2_0_Layer0_0_MEMBER_1_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 27.25 -5.55
+Q 27.25 -4.05 28.35 -3 29.4 -1.95 30.9 -1.95 32.4 -1.95 33.45 -3 34.5 -4.05 34.5 -5.55 34.5 -7.05 33.45 -8.1 32.4 -9.15 30.9 -9.15 29.4 -9.15 28.35 -8.1 27.25 -7.05 27.25 -5.55 Z"/>
+</g>
+
+<g id="Interpolar_2_0_Layer0_1_MEMBER_0_FILL">
+<path fill="#000000" stroke="none" d="
+M -27.65 -10.7
+Q -31.3 -10.7 -33.85 -7.45 -36.4 -4.25 -36.4 0.3 -36.4 4.85 -33.85 8.05 -31.3 11.25 -27.65 11.25 -24.05 11.25 -21.5 8.05 -18.95 4.85 -18.95 0.3 -18.95 -4.25 -21.5 -7.45 -24.05 -10.7 -27.65 -10.7 Z"/>
+</g>
+
+<g id="Interpolar_2_0_Layer0_1_MEMBER_1_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M -27.15 -2.45
+Q -26.1 -1.4 -24.6 -1.4 -23.1 -1.4 -22.05 -2.45 -21 -3.5 -21 -5 -21 -6.5 -22.05 -7.55 -23.1 -8.6 -24.6 -8.6 -26.1 -8.6 -27.15 -7.55 -28.25 -6.5 -28.25 -5 -28.25 -3.5 -27.15 -2.45 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 36.4,11.25) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Interpolar_2_0_Layer0_0_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Interpolar_2_0_Layer0_0_MEMBER_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Interpolar_2_0_Layer0_1_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Interpolar_2_0_Layer0_1_MEMBER_1_FILL"/>
+</g>
+</g>
+</g>
+</svg>

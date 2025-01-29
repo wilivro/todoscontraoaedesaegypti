@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <!-- main -->
+    <script>
+require(['../wilib/js/lib/alternativa_botao_asterisco'], function (edi) {
+
+  edi.setConfig({// configurando o EDI
+    icone: '',
+    sexo: "M",
+    tempoFinal: 5,
+    titulo: 'Leia cada explicação a seguir e, de acordo com seus <br> conhecimentos, selecione a alternativa correta.',
+    qtdTelas: 4//Se for multi tela, colcoar o valor do length do array 
+  });
+
+  var config = {
+    top: 280,
+    left: 75,
+    lineHeight: '18px',
+    textAlign: 'justify',
+    topTexto: 120,
+    leftTexto: 80,
+  };
+
+  function callback () {
+
+  } 
+
+  var btns = [
+    [
+    {texto: 'Apenas a frase A está correta.', dataCorreta: false},
+    {texto: 'Apenas a frase B está correta.', dataCorreta: true},
+    {texto: 'As duas frases estão corretas.', dataCorreta: false}
+    ],
+    [
+    {texto: 'Apenas a frase A está correta.', dataCorreta: false},
+    {texto: 'Apenas a frase B está correta.', dataCorreta: true},
+    {texto: 'As duas frases estão corretas.', dataCorreta: false}
+    ],
+    [
+    {texto: 'Apenas a frase A está correta.', dataCorreta: false},
+    {texto: 'Apenas a frase B está correta.', dataCorreta: false},
+    {texto: 'As duas frases estão incorretas.', dataCorreta: true}
+    ],
+    [
+    {texto: 'Apenas a frase A está correta.', dataCorreta: true},
+    {texto: 'Apenas a frase B está correta.', dataCorreta: false},
+    {texto: 'As duas frases estão corretas.', dataCorreta: false}
+    ]
+      ];
+
+    var textos = [
+      [
+      {topico: 'A', texto: 'O <span class="italico">Aedes aegypti</span> geralmente vive em florestas e áreas rurais, com muitas plantações e poucas pessoas.'},
+      {topico: 'B', texto: 'O <span class="italico">Aedes aegypti</span> geralmente vive em áreas urbanas, principalmente em espaços com ocupação desordenada.'}
+      ],
+      [
+      {topico: 'A', texto: 'O <span class="italico">Aedes aegypti</span> tem cor clara com manchas escuras.'},
+      {topico: 'B', texto: 'O <span class="italico">Aedes aegypti</span> tem cor escura com manchas claras.'}
+      ],
+      [
+      {topico: 'A', texto: 'O <span class="italico">Aedes aegypti</span> só pica durante o dia.'},
+      {topico: 'B', texto: 'O <span class="italico">Aedes aegypti</span> só pica durante a noite.'}
+      ],
+      [
+      {topico: 'A', texto: 'O <span class="italico">Aedes aegypti</span> costuma picar durante o dia, mas também pode picar durante a noite.'},
+      {topico: 'B', texto: 'O <span class="italico">Aedes aegypti</span> costuma medir 7cm.'}
+      ],
+    ];
+
+
+      edi.alternativa_botao_asterisco(btns, textos, function(a) {
+        if (a) {
+          //
+        };
+      }, null, config);//iniciando o EDI
+
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_1', 'todos_2').split('?')[0];
+    }
+  }
+};
+    </script>
+
+    <style>
+
+    .italico {
+      font-style: italic;
+    }
+
+    </style>
+
+  </head> 
+  <body>
+  </body>
+</html>

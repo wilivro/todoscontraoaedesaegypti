@@ -1,0 +1,78 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="101px" height="95px" viewBox="0 0 101 95">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="39.612500000000004" y1="75.025" x2="51.7875" y2="27.775" spreadMethod="pad">
+<stop  offset="0%" stop-color="#8A8A8A"/>
+
+<stop  offset="100%" stop-color="#FFFFFF"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="47.0375" y1="35.3875" x2="28.262499999999996" y2="37.3125" spreadMethod="pad">
+<stop  offset="69.80392156862744%" stop-color="#5C0101"/>
+
+<stop  offset="100%" stop-color="#FEA3A3"/>
+</linearGradient>
+
+<g id="Layer0_0_FILL">
+<path fill="#FF0000" stroke="none" d="
+M 42.55 9.45
+L 41.35 8.6 29.15 0 29.15 8.3 29.15 23.5 40.5 29.6 40.5 68.5 46.15 72.75 46.15 12
+Q 44.346875 10.729296875 42.55 9.45 Z"/>
+
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 93.65 18.65
+Q 97.05 18.3 100.2 18.75
+L 41.35 8.6 42.55 9.45
+Q 44.346875 10.729296875 46.15 12
+L 46.15 72.75 40.5 68.5 40.5 29.6 29.15 23.5 29.15 8.3
+Q 17.4 10.85 8.85 23.95 -0.8 38.7 0.05 74.25
+L 57.05 94.4
+Q 57.1 94 57.1 93.65 56.8 79.55 57.95 68.35 59.65 52.25 64.35 42.1 65.65 39.3 67.15 37 78.1 20.25 93.65 18.65 Z"/>
+</g>
+
+<path id="Layer0_0_1_STROKES" stroke="#CCCCCC" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 100.2 18.75
+Q 97.05 18.3 93.65 18.65 78.1 20.25 67.15 37 65.65 39.3 64.35 42.1 59.65 52.25 57.95 68.35 56.8 79.55 57.1 93.65"/>
+
+<path id="Layer0_0_2_STROKES" stroke="#999999" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 0.05 74.25
+Q -0.8 38.7 8.85 23.95 17.4 10.85 29.15 8.3"/>
+
+<path id="Layer0_0_3_STROKES" stroke="#CCCCCC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 41.35 8.6
+L 100.2 18.75"/>
+
+<path id="Layer0_0_4_STROKES" stroke="url(#Gradient_2)" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 29.15 0
+L 29.15 8.3 29.15 23.5
+M 46.15 72.75
+L 46.15 12"/>
+
+<path id="Layer0_0_5_STROKES" stroke="#990000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 29.15 23.5
+L 40.5 29.6 40.5 68.5 46.15 72.75"/>
+
+<path id="Layer0_0_6_STROKES" stroke="#FF6666" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 41.35 8.6
+L 29.15 0
+M 46.15 12
+Q 44.346875 10.729296875 42.55 9.45
+L 41.35 8.6"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_FILL"/>
+
+<use xlink:href="#Layer0_0_1_STROKES"/>
+
+<use xlink:href="#Layer0_0_2_STROKES"/>
+
+<use xlink:href="#Layer0_0_3_STROKES"/>
+
+<use xlink:href="#Layer0_0_4_STROKES"/>
+
+<use xlink:href="#Layer0_0_5_STROKES"/>
+
+<use xlink:href="#Layer0_0_6_STROKES"/>
+</g>
+</svg>

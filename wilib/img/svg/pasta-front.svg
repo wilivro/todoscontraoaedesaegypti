@@ -1,0 +1,109 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="77px" height="75px" viewBox="0 0 77 75">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="26.25" y1="-8.425000000000004" x2="65.65" y2="80.125" spreadMethod="pad">
+<stop  offset="0%" stop-color="#E8C747"/>
+
+<stop  offset="63.529411764705884%" stop-color="#FCF38E"/>
+
+<stop  offset="100%" stop-color="#FCF38E"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="20.8375" y1="-4.212500000000006" x2="83.1625" y2="86.2125" spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+
+<stop  offset="76.07843137254902%" stop-color="#FFFFFF" stop-opacity="0"/>
+</linearGradient>
+
+<g id="Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_0_FILL">
+<path fill="#FBFFBA" stroke="none" d="
+M 89.65 65.45
+Q 91.35 66.45 90.9 64.55
+L 77.35 7.9
+Q 76.9 6 74.9 6
+L 72.85 6
+Q 70.85 6 70.5 4
+L 70.2 1.95
+Q 69.85 0 67.85 0
+L 43.4 0
+Q 40.7 0 40.55 2.45
+L 41.3 6.3 3.65 6.3
+Q 1.7 6.3 0.55 8.15
+L 0.1 9.6
+Q -0.5 10.6 2.8 12.5
+L 89.65 65.45 Z"/>
+</g>
+
+<g id="Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_1_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 69.75 2.7
+Q 69.45 0.3 68.3 0.8
+L 63.65 0.85
+Q 64.95 1.5 69.75 2.7 Z"/>
+</g>
+
+<g id="Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_2_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 75.8 7
+L 75.3 6.9 73.85 7.55
+Q 75.8 7.2 76.75 8.8 76.35 7.4 75.8 7 Z"/>
+</g>
+
+<g id="Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_3_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 89.35 68.5
+Q 91.4 68.5 90.85 66.55
+L 76.4 9.9
+Q 75.95 8 73.9 8
+L 71.85 8
+Q 69.85 8 69.5 6
+L 69.2 3.95
+Q 68.85 2 66.85 2
+L 42.4 2
+Q 40.45 2 41 3.9
+L 41.7 6.05
+Q 42.35 8 40.3 8
+L 1.65 8
+Q -0.2 8 0.15 9.9
+L 14.6 66.55
+Q 15.15 68.5 17.1 68.5
+L 89.35 68.5 Z"/>
+</g>
+
+<g id="Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_4_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 82.35 43.65
+Q 83.5 42.8 83.2 41.65
+L 75.6 11.95
+Q 75 10.05 69.3 10.05 68.75 10.05 68.2 7 67.7 3.95 65.75 3.95
+L 45.2 3.95
+Q 42.9 4 44 7.05 45.1 10.1 43.45 10.05
+L 5.6 10.05
+Q 4.35 10.05 3.7 10.9 3 11.75 3.3 12.95
+L 8.1 30.65
+Q 8.8 33.55 11.55 32.25 15.7 30.35 21.45 29.35 33 27.35 41.25 32.05 53.4 38.95 67.9 42.35 75.15 44.05 79.95 44.35 81.3 44.45 82.35 43.65 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, -0.242462158203125, 1.0926971435546875, 2.35,0.15) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_2_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_3_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Gr_ficos_gr_folder_frente_0_Layer0_0_MEMBER_4_FILL"/>
+</g>
+</g>
+</svg>

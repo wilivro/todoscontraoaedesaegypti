@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 350"
+     preserveAspectRatio="none" x="0px" y="0px" width="50" height="175">
+
+    <rect x="25" y="82" height="270" width="50" fill="#CCC">
+        <animate attributeName="height" attributeType="XML"
+                 from="10" to="270"
+                 begin="0s" dur="0.3s"
+                />
+        <animate attributeName="y" attributeType="XML"
+                 from="345" to="82"
+                 begin="0s" dur="0.3s"
+                />
+    </rect>
+
+    <g>
+        <polygon points="0,87 50,0 100,87" fill="#CCC"/>
+        <polygon points="8,83 50,9 92,83" fill="#909E32">
+            <animate
+                    attributeName="fill"
+                    begin="0s" dur="0.3s"
+                    from="#B66D24" to="#909E32"
+                    />
+        </polygon>
+
+
+        <polygon class="mudarCor" points="10,82 50,11 90,82" fill="#CADD46">
+            <animate attributeName="fill"
+                     begin="0s" dur="0.3s"
+                     from="#FF9933" to="#CADD46"
+                    />
+        </polygon>
+        <animateMotion
+                path="M0,259 l 0,-259"
+                begin="0s" dur="0.3s"
+                />
+    </g>
+
+
+    <rect class="corSeta" x="30" y="83" height="262" width="40" fill="#909E32">
+        <animate attributeName="height" attributeType="XML"
+                 from="5" to="262"
+                 begin="0s" dur="0.3s"
+                />
+        <animate attributeName="y" attributeType="XML"
+                 from="340" to="83"
+                 begin="0s" dur="0.3s"
+                />
+        <animate attributeName="fill"
+                 begin="0s" dur="0.3s"
+                 from="#B66D24" to="#909E32"
+                />
+
+    </rect>
+
+    <rect class="mudarCor" x="31" y="81" height="263" width="38" fill="#CADD46">
+        <animate attributeName="y" attributeType="XML"
+                 from="340" to="81"
+                 begin="0s" dur="0.3s"
+                />
+        <animate attributeName="height" attributeType="XML"
+                 from="4" to="263"
+                 begin="0s" dur="0.3s"
+                />
+
+        <animate attributeName="fill"
+                 begin="0s" dur="0.3s"
+                 from="#FF9933" to="#CADD46"
+                />
+    </rect>
+
+</svg>

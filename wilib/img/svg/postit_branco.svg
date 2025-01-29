@@ -1,0 +1,41 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="342px" height="292px" viewBox="0 0 342 292">
+<defs>
+<filter id="Filter_1" x="-20%" y="-20.06642269212636%" width="140%" height="140.13284538425273%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#000000" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="6.666666666666667,6.666666666666667" result="result3"/>
+
+<feOffset dx="6.3639610306789285" dy="6.363961030678928" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<g id="S_mbolo_4_0_Layer0_0_FILL">
+<path fill="#F5F5F5" stroke="none" d="
+M 300 131.55
+L 300 0 0 0 0 255.95 171.9 255.95 300 131.55 Z"/>
+</g>
+
+<g id="S_mbolo_4_0_Layer0_1_FILL">
+<path fill="#F5F5F5" stroke="none" d="
+M 170.9 255.65
+Q 240.45 257.45 296.95 248.15
+L 300 130.85 170.9 255.65 Z"/>
+</g>
+</defs>
+
+<g filter="url(#Filter_1)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1.0233306884765625, 0, 0, 1.0233306884765625, 10.5,8.5) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_4_0_Layer0_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_4_0_Layer0_1_FILL"/>
+</g>
+</g>
+</g>
+</svg>

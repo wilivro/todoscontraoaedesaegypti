@@ -1,0 +1,53 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="342px" height="292px" viewBox="0 0 342 292">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="265.82500000000005" y1="243.7625" x2="252.37500000000003" y2="221.2375" spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFF66"/>
+
+<stop  offset="100%" stop-color="#FFFFB0"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="36.01249999999999" y1="29.275000000000006" x2="173.1875" y2="148.025" spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFF66"/>
+
+<stop  offset="100%" stop-color="#FFFFB0"/>
+</linearGradient>
+
+<filter id="Filter_1" x="-20%" y="-20.06642269212636%" width="140%" height="140.13284538425273%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#000000" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="6.666666666666667,6.666666666666667" result="result3"/>
+
+<feOffset dx="6.3639610306789285" dy="6.363961030678928" in="result3" result="result4"/>
+
+<feComposite in2="result4" in="SourceGraphic" operator="over" result="result5"/>
+</filter>
+
+<g id="S_mbolo_4_0_Layer0_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 171.9 255.95
+Q 240.905078125 257.719921875 297 248.45
+L 300 131.55 171.9 255.95 Z"/>
+</g>
+
+<g id="S_mbolo_4_0_Layer0_1_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 300 131.55
+L 300 0 0 0 0 255.95 171.9 255.95 300 131.55 Z"/>
+</g>
+</defs>
+
+<g filter="url(#Filter_1)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1.0233306884765625, 0, 0, 1.0233306884765625, 10.5,8.5) ">
+<g transform="matrix( 1.0078125, 0, 0, 1.003204345703125, -2.35,-1.1) ">
+<use xlink:href="#S_mbolo_4_0_Layer0_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#S_mbolo_4_0_Layer0_1_FILL"/>
+</g>
+</g>
+</g>
+</svg>

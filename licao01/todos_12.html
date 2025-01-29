@@ -1,0 +1,99 @@
+<!-- Desenvolvedor: Rodolfo Araújo -->
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <title>Todos contra o Aedes aegypti</title>
+    <meta charset="utf-8">
+    <script src="../wilib/js/lib/require.js"></script>
+    <script src="../wilib/js/app.js"></script>
+    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+    <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+    <script>
+require(['../wilib/js/lib/alternativa_img'], function (edi) {
+
+  edi.setConfig({
+    sexo: "F",
+    titulo: 'Os parques que frequentamos podem, às vezes, representar uma grande ameaça à nossa saúde. Observe com atenção as imagens e escolha o parque que está livre de possíveis criadouros do mosquito da dengue.',
+    tempoFinal: 5
+  });
+
+  var imgs = [
+  {
+    src: '../img/licao01/12_1.svg',
+    dataCorreta: false,
+    texto: '',
+    textoConfig: {
+      width: 100,
+      height: 200,
+      left: 10,
+      top: 85,
+      setaLeft: 55,
+      fontSize: 12,
+      lineHeight: 1,
+      pMarginTop: 40
+    }
+  },
+  {
+    src: '../img/licao01/12_2.svg',
+    dataCorreta: true,
+    texto: '',
+    textoConfig: {
+      width: 100,
+      height: 200,
+      left: -5,
+      top: 85,
+      setaLeft: 85,
+      fontSize: 12,
+      lineHeight: 1,
+      pMarginTop: 35
+    }
+  },
+  {
+    src: '../img/licao01/12_3.svg',
+    dataCorreta: false,
+    texto: '',
+    textoConfig: {
+      width: 100,
+      height: 100,
+      left: -75,
+      top: 85,
+      setaLeft: 85,
+      fontSize: 12,
+      lineHeight: 1,
+      pMarginTop: 22
+    }
+  }
+  ];
+
+  var config = {
+    width: 160,
+    height: 250,
+    left: 30,
+    top: 60,
+    colunas: 7,
+    margin:  35,
+    padding: 5,
+    fontSize: 11
+  };
+
+  edi.alternativa_img(imgs, null, null, config);
+});
+window.onload = function() {
+  parent = {
+    bloqueio: function() {},
+    seguir: function() {
+      document.location = document.URL.replace('todos_12', 'todos_13').split('?')[0];
+    }
+  }
+};
+    </script>
+    <style>
+    </style>
+  </head>
+
+  <body>
+  </body>
+
+</html>
