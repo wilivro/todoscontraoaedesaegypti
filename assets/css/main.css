@@ -734,6 +734,7 @@ section,
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 45px;
+  z-index: 1;
 }
 
 .pulsar {
