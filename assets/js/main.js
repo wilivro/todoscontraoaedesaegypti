@@ -236,3 +236,31 @@
   btnLoginStudent.addEventListener("click", ClickLoginStudent);
 })();
 
+
+document.querySelectorAll('#container-acre .states a').forEach((link) => {
+  let target;
+  link.addEventListener('mouseover', (a) => {
+    target = a.target.getAttribute('href').slice(1)
+    if(target) 
+      document.querySelector(`.dot.${target}`).classList.add('active');
+  })
+  link.addEventListener('mouseout', () => {
+    if(target)
+      document.querySelector(`.dot.${target}`).classList.remove('active');
+  });
+});
+
+document.querySelectorAll('.hover-dot').forEach((link) => {
+  let target;
+  console.log(link)
+  link.addEventListener('mouseover', (a) => {
+    target = (a.target.classList.contains('hover-dot')) ? a.target : a.target.closest('.hover-dot');
+    target = target.getAttribute('href').slice(1)
+    if(target)
+      document.querySelector(`.hover-state.${target}`).classList.add('active');
+  })
+  link.addEventListener('mouseout', () => {
+    if(target)
+      document.querySelector(`.hover-state.${target}`).classList.remove('active');
+  });
+});

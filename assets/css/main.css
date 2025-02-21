@@ -161,6 +161,10 @@ h6 {
 .flex-row-reverse {
   flex-direction: row-reverse !important;
 }
+.w-100 {
+  width: 100% !important;
+}
+
 
 /*--------------------------------------------------------------
 # Global Header
@@ -655,79 +659,81 @@ section,
   border: 1px solid white;
 }
 
-#locale a:hover .dot {
+#locale .dot.active,
+#locale .dot:hover {
   background-color: #fbb03b;
 }
 
-
-#locale a.a-rio-branco {
-  left: 79%;
-  top: 32.5%;
-  height: 7%;
-  width: 33%;
+#container-acre {
+  padding-top: 114px;
+  margin-top: 0;
 }
-
-#locale a.a-senador-guiomard {
-  left: 81%;
-  top: 40.5%;
-  height: 6%;
-  width: 50%;
+#container-acre .states a:hover, 
+#container-acre .states a.active {
+  color: #fff !important;
+  transform: scale(1.1);
+  text-shadow: #fbb03b 1px 1px 5px;
 }
-
-#locale a.a-capixaba {
-  left: 80%;
-  top: 47%;
-  height: 7%;
-  width: 27%;
+#container-acre > .container-image a div {
+  padding: 0;
+  margin-top: 0;
 }
-
-#locale a.a-xapuri {
-  left: 45%;
-  top: 41.8%;
-  height: 7%;
-  width: 21%;
+#container-acre > .container-image > a {
+  position: absolute;
+  height: 3%;
+  width: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#locale a.a-cruzeiro-do-sul {
-  left: 19%;
-  top: 9%;
-  height: 7%;
-  width: 44%;
+#container-acre > .container-image .a-rio-branco {
+  top: 41%;
+  left: 76%;
 }
-
-#locale a.a-rodrigues-alves  {
-  left: -22%;
-  top: 18%;
-  height: 7%;
-  width: 45%;
+#container-acre > .container-image .a-senador-guiomard {
+  top: 43%;
+  left: 78.2%;
 }
-
-#locale a.a-mancio-lima  {
-  left: -17%;
-  top: 12%;
-  height: 7%;
-  width: 36%;
+#container-acre > .container-image .a-cruzeiro-do-sul {
+  top: 14%;
+  left: 22%;
 }
-
-#locale a.a-tarauaca  {
-  left: 20%;
-  top: 22.5%;
-  height: 7%;
-  width: 28%;
+#container-acre > .container-image .a-rodrigues-alves {
+  top: 17%;
+  left: 23%;
 }
-
-#locale a.a-feijo  {
+#container-acre > .container-image .a-mancio-lima {
+  top: 14%;
+  left: 18%;
+}
+#container-acre > .container-image .a-tarauaca {
+  top: 19%;
+  left: 42%;
+}
+#container-acre > .container-image .a-feijo {
+  top: 19%;
   left: 46%;
-  top: 18%;
-  height: 7%;
-  width: 19%;
 }
-
-#locale a.a-sena-madureira  {
+#container-acre > .container-image .a-senador-madureira {
+  top: 33%;
+  left: 70%;
+}
+#container-acre > .container-image .a-capixaba {
+  top: 45.7%;
+  left: 79.1%;
+}
+#container-acre > .container-image .a-xapuri {
+  top: 47%;
   left: 69%;
-  top: 25.5%;
-  height: 7%;
-  width: 44%;
+}
+#container-acre .states {
+  height: 114px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 45px;
 }
 
 .pulsar {
