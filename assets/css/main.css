@@ -83,7 +83,6 @@
   font-family: var(--title-font);
 }
 
-
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -148,6 +147,19 @@ h6 {
 .font-weight-5 {
   font-weight: 500 !important;
   font-size: 3rem;
+}
+.m-0 {
+  margin: 0;
+}
+.p-1 {
+  padding: 5px;
+}
+.text-1 {
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
 }
 
 /*--------------------------------------------------------------
@@ -633,6 +645,89 @@ section,
 #locale #pernambuco {
   position: absolute;
   top: -100px;
+}
+
+#locale .dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+#locale a:hover .dot {
+  background-color: #fbb03b;
+}
+
+
+#locale a.a-rio-branco {
+  left: 79%;
+  top: 32.5%;
+  height: 7%;
+  width: 33%;
+}
+
+#locale a.a-senador-guiomard {
+  left: 81%;
+  top: 40.5%;
+  height: 6%;
+  width: 50%;
+}
+
+#locale a.a-capixaba {
+  left: 80%;
+  top: 47%;
+  height: 7%;
+  width: 27%;
+}
+
+#locale a.a-xapuri {
+  left: 45%;
+  top: 41.8%;
+  height: 7%;
+  width: 21%;
+}
+
+#locale a.a-cruzeiro-do-sul {
+  left: 19%;
+  top: 9%;
+  height: 7%;
+  width: 44%;
+}
+
+#locale a.a-rodrigues-alves  {
+  left: -22%;
+  top: 18%;
+  height: 7%;
+  width: 45%;
+}
+
+#locale a.a-mancio-lima  {
+  left: -17%;
+  top: 12%;
+  height: 7%;
+  width: 36%;
+}
+
+#locale a.a-tarauaca  {
+  left: 20%;
+  top: 22.5%;
+  height: 7%;
+  width: 28%;
+}
+
+#locale a.a-feijo  {
+  left: 46%;
+  top: 18%;
+  height: 7%;
+  width: 19%;
+}
+
+#locale a.a-sena-madureira  {
+  left: 69%;
+  top: 25.5%;
+  height: 7%;
+  width: 44%;
 }
 
 .pulsar {
