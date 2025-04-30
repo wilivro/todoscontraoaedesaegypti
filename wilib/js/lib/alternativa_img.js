@@ -310,7 +310,9 @@ define(function(require) {
     return {
         objetivos: [],
         setConfig: _setConfig,
-        alternativa_img: _init
+        alternativa_img: _init,
+        pecaObjetivos: edi.objetivos,
+        root: edi
     };
 
 });

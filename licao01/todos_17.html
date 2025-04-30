@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <title>Lição 08 Peça 61</title>
+    <title>Todos contra o Aedes aegypti</title>
     <meta charset="utf-8">
     <script src="../wilib/js/lib/require.js"></script>
     <script src="../wilib/js/app.js"></script>
@@ -14,8 +14,7 @@
         $(function () {
             require(['../wilib/js/lib/arrasta'], function (edi) {
 
-                edi.setConfig({
-                    icone: 'exclamacao',
+                edi.setConfig({                    
                     titulo: 'Praticar a reciclagem é uma ótima maneira de evitar que o lixo vá parar<br/>nos rios e oceanos, além disso, o lixo pode se tornar algum objeto útil.<br/>Faça a coleta seletiva arrastando cada item para a lixeira correspondente.'
                 });
 
@@ -108,7 +107,7 @@
           parent = {
             bloqueio: function() {},
             seguir: function() {
-              document.location = '/';
+                document.location = document.URL.replace('todos_17', 'todos_18').split('?')[0];;
             }
           }
         };
