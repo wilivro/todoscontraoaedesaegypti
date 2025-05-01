@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Todos contra o Aedes aegypti</title>
+  <meta charset="utf-8">
+  <script src= "../wilib/js/lib/require.js"></script>
+  <script src= "../wilib/js/app.js"></script>
+  <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+  <link rel="stylesheet" href="../wilib/css/estilo.css">
+
+  
+
+  <script>
+    require(['../wilib/js/lib/alternativa_img'], function (edi) {
+
+      edi.setConfig({        
+        titulo: '<span>Observe os reservatórios de água abaixo e selecione<br>aqueles que não estão fechados corretamente.</span>',        
+      });
+
+      var tConfig = {
+        background: 'transparent',
+        width: 110,
+        height: 20,
+        left: 0,
+        top: 140,
+        fontSize: 17,
+        border: 0
+      }
+      
+
+      var imgs = [{
+        src: '../img/licao01/1.jpeg',
+        dataCorreta: false,
+        textoConfig: tConfig
+      }, {
+        src: '../img/licao01/2.jpeg',
+        dataCorreta: false,
+        textoConfig: tConfig
+      }, {
+        src: '../img/licao01/3.jpeg',
+        dataCorreta: true,
+        textoConfig: tConfig
+      }, {
+        src: '../img/licao01/4.jpeg',
+        dataCorreta: false,
+        textoConfig: tConfig
+      }, {
+        src: '../img/licao01/5.jpeg',
+        dataCorreta: true,
+        textoConfig: tConfig
+      }, {
+        src: '../img/licao01/6.jpeg',
+        dataCorreta: false,
+        textoConfig: tConfig
+      },];
+
+      var config = {
+        width: 95,
+        left: 10,
+        top: 150,
+        colunas: 4,
+        margin: 5,
+        padding: 5,
+        fontSize: 11,
+        miniIconTop: 60,
+        balao: false,
+        imgBoxCSS: {
+          height: 90,
+          border: '1px solid #8CA8B8',
+          boxShadow: '0 0 0 0',
+          borderRadius: 10
+        },
+        miniIconCSS: {
+          background: 'transparent',
+          opacity: 1,
+          border: 0,
+          boxShadow: '0 0 0 0',
+          marginLeft: 5
+        },
+      };
+
+      function callback(a, b) {
+        b.parent().css('box-shadow', '0 0 0 3px #8CA8B8');
+        if (edi.pecaObjetivos.indexOf(0) == -1){
+          calbackFinal()
+        }
+      }
+      
+      function calbackFinal() {        
+        let erro = edi.pecaObjetivos.indexOf(2) > -1
+        const mensagemAcerto = `<span style="font-size: 14px;">Muito bem! É fundamental que os reservatórios de água sejam fechados corretamente, evitando, por exemplo, a entrada de mosquistos como o Aedes aegypti. Esses são os locais perfeitos para a fêmea do mosquito colocar seus ovos. Quando os reservatórios estão fechados corretamente, os mosquitos não conseguem acessá-los, impedindo sua proliferação.</span>`
+        const mensagemErro = "Tente novamente! Observe que alguns reservatórios não estão fechados corretamente, estão parcialmente abertos, permitindo a entrada de mosquistos e outros animais.";
+       // $('#txt p').fadeIn().text(erro ? mensagemErro : mensagemAcerto);
+        edi.root.util.popUp(erro ? mensagemErro : mensagemAcerto)
+      }
+
+      edi.alternativa_img(imgs, callback, null, config);
+    });
+
+    window.onload = function() {
+          parent = {
+            bloqueio: function() {},
+            seguir: function() {
+            document.location = '/';
+            }
+          }
+        };
+
+  </script>
+
+  <style>
+    i {
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    #txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      width: 788px;
+      height: 97px;
+      box-sizing: border-box;
+      padding: 0 80px;
+    }
+
+    #txt p {
+      display: none;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      font-weight: bold;
+      color: #99CC00;
+      border-radius: 10px;
+      line-height: 1.15;
+      text-align: center;
+      padding: 15px;
+    }
+
+    
+    .mini-icon {
+      top: 40=px !important;
+    }
+
+    section[data-edi="alternativa_img"] {
+      justify-content: center;
+      align-items: center;
+      top: 111px !important;
+      display: flex !important;
+      height: 218px !important;
+      width: 788px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="txt">
+    <p>
+      
+    </p>
+  </div>
+</body>
+
+</html>

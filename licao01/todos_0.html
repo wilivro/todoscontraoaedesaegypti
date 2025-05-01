@@ -1,106 +1,315 @@
 <!-- Desenvolvedor: Rodolfo Araújo -->
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <title>Todos contra o Aedes aegypti</title>
-    <meta charset="utf-8">
-    <script src="../wilib/js/lib/require.js"></script>
-    <script src="../wilib/js/app.js"></script>
-    <link rel="stylesheet" href="../wilib/css/font-awesome.css">
-    <link rel="stylesheet" href="../wilib/css/estilo.css">
 
-   <script>
-require(['../wilib/js/lib/edi'], function (edi) {
+<head>
+  <title>Todos contra o Aedes aegypti</title>
+  <meta charset="utf-8">
+  <script src="../wilib/js/lib/require.js"></script>
+  <script src="../wilib/js/app.js"></script>
+  <link rel="stylesheet" href="../wilib/css/font-awesome.css">
+  <link rel="stylesheet" href="../wilib/css/estilo.css">
 
-  edi.iniciar({
-    tempoFinal: 0,
-    enunciado: false
-  });
+  <script>
+    require(['../wilib/js/lib/edi'], function (edi) {
 
-  var canvas, stage, exportRoot;
+      edi.iniciar({
+        tempoFinal: 0,
+        enunciado: false
+      });
 
-  var reflita = {
-    texto: 'Caro colega,<br>É muito bom tê-lo por aqui!<br> Agora que você terminou a leitura de seu livro Todos Contra o <span id="italico">Aedes aegypti</span>, chegou a hora de testar seus conhecimentos e ver se você realmente leu tudo com muita atenção.<br> Lembre-se: para ser um verdadeiro combatente desse mosquito tão malvado, você precisa conhecer bem alguns conceitos.<br> Por isso criamos para você, uma série de atividades e jogos interativos abordando os principais assuntos estudados no livro.<br> E aí, pronto para iniciar?'
-  };
+      var canvas, stage, exportRoot;
 
-  function animacao() {
-    canvas = document.getElementById("canvas");
-    exportRoot = new lib.introdução();
+      var reflita = {
+        texto: 'Caro colega,<br>É muito bom tê-lo por aqui!<br> Agora que você terminou a leitura de seu livro Todos Contra o <span id="italico">Aedes aegypti</span>, chegou a hora de testar seus conhecimentos e ver se você realmente leu tudo com muita atenção.<br> Lembre-se: para ser um verdadeiro combatente desse mosquito tão malvado, você precisa conhecer bem alguns conceitos.<br> Por isso criamos para você, uma série de atividades e jogos interativos abordando os principais assuntos estudados no livro.<br> E aí, pronto para iniciar?'
+      };
 
-    stage = new createjs.Stage(canvas);
-    stage.addChild(exportRoot);
-    stage.update();
+      function animacao() {
+        canvas = document.getElementById("canvas");
+        exportRoot = new lib.introdução();
 
-    createjs.Ticker.setFPS(lib.properties.fps);
-    createjs.Ticker.addEventListener("tick", stage);
-  }
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
 
-  var init = function() {
-    animacao();
-    var $txt = $('<div>').css({
-      position: 'absolute',
-      top: 55,
-      left: 390,
-      textAlign: 'juatify',
-      fontSize: '14px',
-      width: 325,
-      color: '#eee',
-      border: '2px solid #FFFFFF',
-      borderRadius: 10,
-      padding: '10px 20px',
-      backgroundColor: 'rgba(0,0,0,0.5)',
-      textShadow: '1px 1px 1px #000',
-      fontWeight: 'bold',
-      zIndex: 2,
-      display: 'none',
-      letterSpacing: '1'
-    }).html(reflita.texto).appendTo('#texto');
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+      }
 
-    setTimeout(function(){
-      $txt.fadeIn(
-          setTimeout(function() {
-            edi.finalizar();
-          },3000)
+      var init = function () {
+        // animacao();
+        var $txt = $('<div>').css({
+          position: 'absolute',
+          top: 55,
+          left: 390,
+          textAlign: 'juatify',
+          fontSize: '14px',
+          width: 325,
+          color: '#eee',
+          border: '2px solid #FFFFFF',
+          borderRadius: 10,
+          padding: '10px 20px',
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          textShadow: '1px 1px 1px #000',
+          fontWeight: 'bold',
+          zIndex: 2,
+          display: 'none',
+          letterSpacing: '1'
+        }).html(reflita.texto).appendTo('#texto');
+
+        setTimeout(function () {
+          $txt.fadeIn(
+            setTimeout(function () {
+              edi.finalizar();
+            }, 3000)
           );
-    },2000)
-  }
+        }, 2000)
+      }
 
-  edi.util.removeLoading(init);
-});
+      edi.util.removeLoading(init);
+    });
 
-window.onload = function() {
-  parent = {
-    bloqueio: function() {},
-    seguir: function() {
-      document.location = document.URL.replace('todos_0', 'todos_1').split('?')[0];
+    window.onload = function () {
+      parent = {
+        bloqueio: function () { },
+        seguir: function () {
+          document.location = document.URL.replace('todos_0', 'todos_1').split('?')[0];
+        }
+      }
+    };
+  </script>
+  <!-- Scripts usados para animação -->
+  <script src="../wilib/js/vendor/easeljs-0.8.1.min.js"></script>
+  <script src="../wilib/js/vendor/tweenjs-0.6.1.min.js"></script>
+  <script src="../wilib/js/vendor/movieclip-0.8.1.min.js"></script>
+  <script src="../img/licao01/introducao.js"></script>
+
+
+  <style>
+    body {
+      background-color:#D4D4D4"
     }
-  }
-};
-    </script>
-    <!-- Scripts usados para animação -->
-    <script src="../wilib/js/vendor/easeljs-0.8.1.min.js"></script>
-    <script src="../wilib/js/vendor/tweenjs-0.6.1.min.js"></script>
-    <script src="../wilib/js/vendor/movieclip-0.8.1.min.js"></script>
-    <script src="../img/licao01/introducao.js"></script>
-
-
-    <style>
-
-#canvas {
-  position: absolute;
-  z-index: -1;
-}
+    #canvas {
+      position: absolute;
+      z-index: -1;
+    }
 
     #italico {
       font-style: italic;
     }
+    section {
+      position: relative;
+      width: 788px;
+      height: 383px;
+    }
+    .person {
+      position: absolute;
+      background-image: url(../images/criancas.svg);
+      background-size: 284px auto;
+      background-repeat: no-repeat;
+    } 
+    #boy {
+      background-position: 1px -34px;
+      width: 102px;
+      height: 273px;
+      left: 90px;
+      bottom: 0;
+    }
+    #boy img {
+      position: absolute;
+      width: 150px;
+      bottom: -10px;
+      right: -50px;
+      z-index: -1;
+    }
+    .pivot {
+      border: 1px solid red;
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      z-index: -1;
+    }
+    #boy .pivot {
+      top: 113px;
+      left: 25px;
+      animation: ola 1.3s alternate-reverse infinite;
+    }
+    #girl {
+      background-position: -169px -1px;
+      width: 116px;
+      height: 306px;
+      left: 300px;
+      bottom: 0;
+    }
 
-    </style>
-  </head>
+    #girl .pivot.l {
+      animation: olal 1s alternate-reverse infinite;
+    }
+    #girl .pivot.r {
+      animation: olar 1s alternate-reverse infinite;
+    }
 
-  <body style="background-color:#D4D4D4">
-    <div id="texto"></div>
-    <canvas  id="canvas" width="788" height="383" style="background-color:#FFFFFF"></canvas>
-  </body>
+    #girl .pivot.l {
+      top: 109px;
+      left: 30px;
+    }
+
+    #girl .pivot.r {
+      top: 109px;
+      left: 87px;
+    }
+
+    #girl .pivot.r img {
+      width: 100px;
+      top: -65px;
+      position: absolute;
+      left: -4px;
+    }
+
+    
+    #girl .pivot.l img {
+      width: 100px;
+      top: -65px;
+      position: absolute;
+      left: -94px;
+      transform: scaleX(-1);
+    }
+
+    @keyframes ola {
+      from {
+        transform: rotate(-30deg);
+      }
+      to {
+        transform: rotate(15deg);
+      }
+    }
+    @keyframes olar {
+      from {
+        transform: rotate(-30deg);
+      }
+      to {
+        transform: rotate(15deg);
+      }
+    }
+    @keyframes olal {
+      from {
+        transform: rotate(15deg);
+      }
+      to {
+        transform: rotate(-30deg);
+      }
+    }
+
+    /* olhos  */
+
+    .eye {
+      position: relative;
+      justify-content: space-around;
+      width: 60px;
+      top: 48px;
+      left: 20px;
+      background-color: #b47657;
+      padding-bottom: 5px;
+      animation: piscar 4s normal infinite;
+      display: flex;
+    }
+    .eye .r, .eye .l{
+      width: 15px;
+      height: 3px;
+      border-radius: 100%;
+      margin-top: 8px;
+      background-color: black;
+    }
+
+    #girl .eye {
+      top: 43px;
+      left: 25px;
+      width: 63px;
+      border-radius: 100%;
+    }
+
+    @keyframes piscar {
+      0% {
+        opacity: 0;
+        visibility: hidden;
+      }
+      95% {
+        opacity: 0;
+        visibility: hidden;
+      }
+      100% {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    /* entrada dos persons */
+
+    section#persons {
+      position: absolute;
+      top: 0;
+      background: url(../images/bg-cidade.svg) no-repeat;
+      z-index: -1;
+      width: 788px;
+      height: 383px;
+    }
+    section#persons #boy {
+      position: absolute;
+      top: 1000px;
+      animation: showBoy 2s ease-in forwards;
+      animation-delay: 1s;
+    }
+    section#persons #girl {
+      position: absolute;
+      top: 1000px;
+      animation: showGirl 2s ease-in forwards;
+    }
+    @keyframes showBoy {
+      from {
+        top: 1000px;
+      }
+      to {
+        top: 110px
+      }
+    }
+    @keyframes showGirl {
+      from {
+        top: 1000px;
+      }
+      to {
+        top: 70px
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="texto"></div>
+  <canvas id="canvas" width="788" height="383" style="background-color:#FFFFFF"></canvas>
+  <section id="persons">
+    <div id="boy" class="person">
+      <div class="eye">
+        <div class="r"></div>
+        <div class="l"></div>
+      </div>
+      <div class="pivot">
+        <img src="../images/braco_menino.svg" alt=""> 
+      </div>
+    </div>
+    <div id="girl" class="person">
+      <div class="eye">
+        <div class="r"></div>
+        <div class="l"></div>
+      </div>
+      <div class="pivot l">
+        <img src="../images/menina_braco.svg" alt="">
+      </div>
+      <div class="pivot r">
+        <img src="../images/menina_braco.svg" alt="">
+      </div>
+    </div>
+  </section>
+</body>
 
 </html>

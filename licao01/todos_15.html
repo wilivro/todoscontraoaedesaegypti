@@ -58,7 +58,7 @@ window.onload = function() {
   parent = {
     bloqueio: function() {},
     seguir: function() {
-      document.location = '/';
+      document.location = document.URL.replace('todos_15', 'todos_16').split('?')[0];;
     }
   }
 };

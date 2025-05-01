@@ -898,7 +898,8 @@ define(function (require) {
       pontoY: _pontoY,
       pontoCentro: _pontoCentro,
       embaralhar: _embaralhar,
-      popUp: _popUp
+      popUp: _popUp,
+      Preloader: Preloader
     },
     interacao: {
       revela: 1,
