@@ -139,11 +139,14 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.font-weight-9 {
+  font-weight: 900 !important;
+  font-size: 3rem;
+}
 .font-weight-7 {
   font-weight: 700 !important;
   font-size: 3rem;
 }
-
 .font-weight-5 {
   font-weight: 500 !important;
   font-size: 3rem;
@@ -157,6 +160,9 @@ h6 {
 .text-1 {
   font-size: 1rem;
   text-wrap: nowrap;
+}
+.text-2 {
+  font-size: 2.5rem;
 }
 .flex-row-reverse {
   flex-direction: row-reverse !important;
@@ -1132,6 +1138,85 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Program Section
+--------------------------------------------------------------*/
+#program {
+  background-image: url(../img/paper-textured.png);
+  background-size: cover;
+}
+#program .container {
+  padding-bottom: 3rem !important;
+}
+#program h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-size: 3.5rem !important;
+}
+
+#program h4  {
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+#program h4 i {
+  font-style: italic;
+}
+#program .background-secondary {
+  position: relative;
+  width: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#program article {
+  position: relative;
+  white-space: nowrap;
+  padding: 0 50px;
+  color: var(--heading-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-weight: 900;
+  top: -25px
+}
+#program article:not(.first) {
+  margin-top: 30px;
+}
+#program article.last {
+  margin-top: -20px;
+  top: 20px;
+}
+#program article .date {
+  font-weight: 400;
+}
+#program article::before{
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-color);
+  z-index: 1;
+  border-radius: 100%;
+}
+#program article.left::before {
+  right: -12px;
+}
+#program article.right::before {
+  left: -12px;
+}
+#program article.left{
+  align-self: end;
+  text-align: right;
+}
+#program .city {
+  text-wrap: nowrap;
+}
+@media (max-width: 700px) {
+  #program .city {
+    text-wrap: wrap;
+  }
+  #program .city span{
+    text-wrap: nowrap;
+  }
+}
 /*--------------------------------------------------------------
 # Contest Section
 --------------------------------------------------------------*/
