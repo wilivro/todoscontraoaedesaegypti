@@ -1,755 +1,1096 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Index - Company Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Company Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="favicon.png" rel="icon" />
 
-  <!-- Favicons -->
-  <link href="favicon.png" rel="icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-end justify-content-lg-center">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#project" class="active">O PROJETO</a></li>
-          <li><a href="#locale">LOCALIDADES</a></li>
-          <li><a href="#program">PROGRAMAÇÃO</a></li>
-          <li><a href="#galery">GALERIA</a></li>
-          <li><a href="#contest">CONCURSOS</a></li>
-          <li><a href="#student">ÁREA DO ALUNO</a></li>
-          <li><a href="#teacher">ÁREA DO PROFESSOR</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section background-contrast">
-
-      <div id="hero-carousel" class="folder">
-
-        <div class="folder-item active">
-          <img src="assets/img/folder/folder.png" alt="">
-          <div class="container">
-            <img id="logo-aedes-aegypti" src="assets/img/todos-contra-aedes-aegypti.png" alt="">
-          </div>
-        </div><!-- End Carousel Item -->
-
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-end justify-content-lg-center"
+      >
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#project" class="active">O PROJETO</a></li>
+            <li><a href="#locale">LOCALIDADES</a></li>
+            <li><a href="#program">PROGRAMAÇÃO</a></li>
+            <li><a href="#galery">GALERIA</a></li>
+            <li><a href="#contest">CONCURSOS</a></li>
+            <li><a href="#student">ÁREA DO ALUNO</a></li>
+            <li><a href="#teacher">ÁREA DO PROFESSOR</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
+        </nav>
       </div>
+    </header>
 
-    </section><!-- /Hero Section -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section background-contrast">
+        <div id="hero-carousel" class="folder">
+          <div class="folder-item active">
+            <img src="assets/img/folder/folder.png" alt="" />
+            <div class="container">
+              <img
+                id="logo-aedes-aegypti"
+                src="assets/img/todos-contra-aedes-aegypti.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- End Carousel Item -->
+        </div>
+      </section>
+      <!-- /Hero Section -->
 
-    <!-- Project Section -->
-    <section id="project" class="project section background-secondary textura">
-
-      <div class="container">
-
-        <div class="row position-relative">
-
-          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="bg-title">O PROJETO</h2>
+      <!-- Project Section -->
+      <section
+        id="project"
+        class="project section background-secondary textura"
+      >
+        <div class="container">
+          <div class="row position-relative">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="bg-title">O PROJETO</h2>
               <p class="text-justify mb-0">
-                O projeto Todos contra o Aedes aegypti é uma iniciativa voltada para estudantes da rede pública de ensino, com o objetivo de conscientizar e engajar a juventude no combate ao mosquito transmissor de doenças como dengue, zika e chikungunya. Por meio de materiais didáticos, ações educacionais e práticas preventivas, busca-se formar agentes de transformação, capazes de liderar ações de combate ao Aedes aegypti em suas comunidades.
-                <br><br>
-                A iniciativa destaca a importância de atitudes preventivas para a promoção da saúde coletiva, incentivando os jovens a adotarem práticas simples, como a eliminação de criadouros e a disseminação de informações, gerando impacto positivo em suas escolas, famílias e vizinhanças.
-                <br><br>
+                O projeto Todos contra o Aedes aegypti é uma iniciativa voltada
+                para estudantes da rede pública de ensino, com o objetivo de
+                conscientizar e engajar a juventude no combate ao mosquito
+                transmissor de doenças como dengue, zika e chikungunya. Por meio
+                de materiais didáticos, ações educacionais e práticas
+                preventivas, busca-se formar agentes de transformação, capazes
+                de liderar ações de combate ao Aedes aegypti em suas
+                comunidades.
+                <br /><br />
+                A iniciativa destaca a importância de atitudes preventivas para
+                a promoção da saúde coletiva, incentivando os jovens a adotarem
+                práticas simples, como a eliminação de criadouros e a
+                disseminação de informações, gerando impacto positivo em suas
+                escolas, famílias e vizinhanças.
+                <br /><br />
                 O projeto é estruturado em etapas, com destaque para:
-                <br><br>
+                <br /><br />
               </p>
               <ul>
-                <li>Sensibilização e conscientização dos estudantes sobre a importância do combate ao Aedes aegypti;</li>
-                <li>Capacitação de professores da rede pública para que multipliquem o conhecimento em sala de aula;</li>
-                <li>Desenvolvimento de projetos pedagógicos nas escolas, promovendo soluções criativas e colaborativas;</li>
-                <li>Engajamento dos jovens na implementação de ações práticas em suas comunidades.</li>
+                <li>
+                  Sensibilização e conscientização dos estudantes sobre a
+                  importância do combate ao Aedes aegypti;
+                </li>
+                <li>
+                  Capacitação de professores da rede pública para que
+                  multipliquem o conhecimento em sala de aula;
+                </li>
+                <li>
+                  Desenvolvimento de projetos pedagógicos nas escolas,
+                  promovendo soluções criativas e colaborativas;
+                </li>
+                <li>
+                  Engajamento dos jovens na implementação de ações práticas em
+                  suas comunidades.
+                </li>
               </ul>
               <p class="text-justify mb-0">
-                A participação ativa de cada indivíduo é essencial para fortalecer a saúde pública e construir um futuro mais saudável para todos!
+                A participação ativa de cada indivíduo é essencial para
+                fortalecer a saúde pública e construir um futuro mais saudável
+                para todos!
               </p>
-          </div>
-
-          <div id="objectives" class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="bg-title w-100 col-12">Objetivos</h2>
-            <div class="d-flex gap-4 flex-column flex-md-row">
-              <div class="box"><b>Fortalecer</b> a saúde ambiental e a conscientização sobre os riscos das arboviroses.</div>
-              <div class="bar-vertical"></div>
-              <div class="box"><b>Implementar</b> práticas educativas e informativas, utilizando tecnologias e materiais interativos.</div>
-              <div class="bar-vertical"></div>
-              <div class="box"><b>Engajar</b> comunidades escolares e seus entornos para promover ações preventivas e de combate.</div>
             </div>
-          </div>
-          
-          <div class="py-3"></div>
 
-          <div id="steps" class="col-12" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="bg-title w-100 col-12">Etapas</h2>
-            <div class="container">
-              <div class="col-12 px-0 mx-0">
-                <div class="row">
-
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/img/icon/hand.png" alt="">
-                    Realização de Termo de Cooperação Técnica.
-                  </div>
-                  
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/img/icon/book.png" alt="">
-                    Atualização do<br>Material Didático.
-                  </div>
-                  
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/img/icon/mega.png" alt="">
-                    Criação de Campanha<br>de Comunicação.
-                  </div>
-                  
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/img/icon/training.png" alt="">
-                    Formação de Professores da Rede Pública.
-                  </div>
-                  
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
-                    <img src="./assets/img/icon/screen.png" alt="">
-                    Tecnologias de<br>Mensuração de Resultados.
-                  </div>
-                  
-                  <div class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12" style="font-size: 1.4rem;">
-                    <img src="./assets/img/icon/projects.png" alt="">
-                    Desenvolvimento de Projetos Pedagógicos nas Escolas.
-                  </div>
-                
+            <div
+              id="objectives"
+              class="col-12"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h2 class="bg-title w-100 col-12">Objetivos</h2>
+              <div class="d-flex gap-4 flex-column flex-md-row">
+                <div class="box">
+                  <b>Fortalecer</b> a saúde ambiental e a conscientização sobre
+                  os riscos das arboviroses.
+                </div>
+                <div class="bar-vertical"></div>
+                <div class="box">
+                  <b>Implementar</b> práticas educativas e informativas,
+                  utilizando tecnologias e materiais interativos.
+                </div>
+                <div class="bar-vertical"></div>
+                <div class="box">
+                  <b>Engajar</b> comunidades escolares e seus entornos para
+                  promover ações preventivas e de combate.
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-12 mt-5" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="text-center font-weight-7 mb-4 default-color">Quem realiza o projeto?</h2>
-            <p class="text-justify">
-              O projeto é realizado pelo <b class="accent-color">Instituto Sapien</b>, em parceria com as secretarias estaduais e
-              municipais de Saúde e Educação. Conta ainda com fomento do Ministério da Saúde.
-            </p>
-          </div>
+            <div class="py-3"></div>
 
+            <div
+              id="steps"
+              class="col-12"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h2 class="bg-title w-100 col-12">Etapas</h2>
+              <div class="container">
+                <div class="col-12 px-0 mx-0">
+                  <div class="row">
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                    >
+                      <img src="./assets/img/icon/hand.png" alt="" />
+                      Realização de Termo de Cooperação Técnica.
+                    </div>
+
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                    >
+                      <img src="./assets/img/icon/book.png" alt="" />
+                      Atualização do<br />Material Didático.
+                    </div>
+
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                    >
+                      <img src="./assets/img/icon/mega.png" alt="" />
+                      Criação de Campanha<br />de Comunicação.
+                    </div>
+
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                    >
+                      <img src="./assets/img/icon/training.png" alt="" />
+                      Formação de Professores da Rede Pública.
+                    </div>
+
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                    >
+                      <img src="./assets/img/icon/screen.png" alt="" />
+                      Tecnologias de<br />Mensuração de Resultados.
+                    </div>
+
+                    <div
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
+                      style="font-size: 1.4rem"
+                    >
+                      <img src="./assets/img/icon/projects.png" alt="" />
+                      Desenvolvimento de Projetos Pedagógicos nas Escolas.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-5" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="text-center font-weight-7 mb-4 default-color">
+                Quem realiza o projeto?
+              </h2>
+              <p class="text-justify">
+                O projeto é realizado pelo
+                <b class="accent-color">Instituto Sapien</b>, em parceria com as
+                secretarias estaduais e municipais de Saúde e Educação. Conta
+                ainda com fomento do Ministério da Saúde.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- /Project Section -->
 
-      </div>
-
-    </section><!-- /Project Section -->
-
-    <!-- Locale Section -->
-    <div class="line"></div>
-    <section id="locale" class="locale section">
-
-      <div class="container">
-        <div class="row gy-4" data-aos="fade-down-left" data-aos-delay="100">
-          <h2 class="bg-title flip surface-color font-weight-5">LOCALIDADES</h2>
-          <div class="container-image d-flex justify-content-center position-relative">
-            <img src="./assets/img/localidades-2.png" alt="Ações no Acre em 2025">
-
-            <a class="a-acre" href="#acre">
-              <div data-aos="zoom-in-right" data-aos-delay="300">
-                <div class="d-flex flex-column align-items-center">
-                  <img class="pulsar" src="./assets/img/alvo-aedes-aegypti.png">
-                  <h2 class="font-weight-7 default-color texto-com-borda-grossa">Acre</h2>
-                  <h2 class="bg-title flip w-100 surface-color">2025</h2>
-                </div>
-              </div>
-            </a>
-            <a class="a-alagoas" href="#alagoas">
-              <div data-aos="zoom-in-down" data-aos-delay="300">
-                <div class="d-flex flex-column align-items-center scale-05">
-                  <img class="pulsar" src="./assets/img/alvo-aedes-aegypti.png">
-                  <h2 class="accent-color font-weight-7 texto-com-borda-grossa">ALAGOAS</h2>
-                </div>
-              </div>
-            </a>
-
-            <a class="a-pernambuco" href="#pernambuco">
-              <div data-aos="zoom-in-up" data-aos-delay="300">
-                <div class="d-flex flex-column align-items-center scale-05">
-                  <img class="pulsar" src="./assets/img/alvo-aedes-aegypti.png">
-                  <h2 class="accent-color font-weight-7 texto-com-borda-grossa">PERNAMBUCO</h2>
-                </div>
-              </div>
-            </a>
-            
-          </div>
-
-          <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center mt-1 position-relative">
-            <div id="acre"></div>
-            <div class="aedes-container d-flex justify-content-center align-items-center gap-2">
-              <div class="aedes"></div>
-              <h2 class="accent-color font-weight-7">ACRE 2025</h2>
-            </div>
-            <div class="todos-contra font-weight-4">
-              TODOS CONTRA<br>O AEDES AEGYPTI
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 pt-5 mt-0">
-            A educação é a base da transformação. A partir
-            dessa premissa, o projeto Todos contra o Aedes
-            aegypti surge como uma resposta ao aumento
-            alarmante dos casos de dengue, zika e chikungunya
-            no Brasil. Por meio de ações educativas, mobilização
-            social e engajamento, a iniciativa busca transformar
-            estudantes do Ensino Fundamental em agentes de
-            mudança na luta contra o mosquito transmissor.
-          </div>
-
-        </div>
-      </div>
-
-      <div class="my-5"></div>
-
-      <div data-aos="fade-right" data-aos-delay="100">
+      <!-- Locale Section -->
+      <div class="line"></div>
+      <section id="locale" class="locale section">
         <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 d-flex justify-content-center position-relative" data-aos="fade-up">
-              <div class="container-image d-flex justify-content-center position-relative" style="max-width: 367px;">
-                <img src="./assets/img/acoes-acre.png" alt="Ações no Acre em 2025" style="max-width: 367px;">
+          <div class="row gy-4" data-aos="fade-down-left" data-aos-delay="100">
+            <h2 class="bg-title flip surface-color font-weight-5">
+              LOCALIDADES
+            </h2>
+            <div
+              class="container-image d-flex justify-content-center position-relative"
+            >
+              <img
+                src="./assets/img/localidades-2.png"
+                alt="Ações no Acre em 2025"
+              />
 
-                <a class="a-rio-branco" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"
-                        style="transform: translate(35px, 15px);"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0">
-                        Rio Branco
-                      </h2>
-                    </div>
+              <a class="a-acre" href="#acre">
+                <div data-aos="zoom-in-right" data-aos-delay="300">
+                  <div class="d-flex flex-column align-items-center">
+                    <img
+                      class="pulsar"
+                      src="./assets/img/alvo-aedes-aegypti.png"
+                    />
+                    <h2
+                      class="font-weight-7 default-color texto-com-borda-grossa"
+                    >
+                      Acre
+                    </h2>
+                    <h2 class="bg-title flip w-100 surface-color">2025</h2>
                   </div>
-                </a>
+                </div>
+              </a>
+              <a class="a-alagoas" href="#alagoas">
+                <div data-aos="zoom-in-down" data-aos-delay="300">
+                  <div class="d-flex flex-column align-items-center scale-05">
+                    <img
+                      class="pulsar"
+                      src="./assets/img/alvo-aedes-aegypti.png"
+                    />
+                    <h2
+                      class="accent-color font-weight-7 texto-com-borda-grossa"
+                    >
+                      ALAGOAS
+                    </h2>
+                  </div>
+                </div>
+              </a>
 
-                <a class="a-senador-guiomard" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"
-                      style="transform: translate(3px, -28px);"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0">
-                        Senador Guiomard
-                      </h2>
-                    </div>
+              <a class="a-pernambuco" href="#pernambuco">
+                <div data-aos="zoom-in-up" data-aos-delay="300">
+                  <div class="d-flex flex-column align-items-center scale-05">
+                    <img
+                      class="pulsar"
+                      src="./assets/img/alvo-aedes-aegypti.png"
+                    />
+                    <h2
+                      class="accent-color font-weight-7 texto-com-borda-grossa"
+                    >
+                      PERNAMBUCO
+                    </h2>
                   </div>
-                </a>
+                </div>
+              </a>
+            </div>
 
-                <a class="a-cruzeiro-do-sul" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"
-                        style="transform: translateY(10px);"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0" style="width: 76px;">
-                        Cruzeiro do Sul 
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+            <div
+              class="col-lg-6 col-md-12 d-flex flex-column align-items-center mt-1 position-relative"
+            >
+              <div id="acre"></div>
+              <div
+                class="aedes-container d-flex justify-content-center align-items-center gap-2"
+              >
+                <div class="aedes"></div>
+                <h2 class="accent-color font-weight-7">ACRE 2025</h2>
+              </div>
+              <div class="todos-contra font-weight-4">
+                TODOS CONTRA<br />O AEDES AEGYPTI
+              </div>
+            </div>
 
-                <a class="a-rodrigues-alves" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center flex-row-reverse">
-                      <div class="dot"
-                        style="transform: translate(-27px, -26px);"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0" style="width: 90px;">
-                        Rodrigues Alves 
-                      </h2>
-                    </div>
-                  </div>
-                </a>
-                
-                <a class="a-mancio-lima " href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center flex-row-reverse">
-                      <div class="dot" style="transform: translate(-11px, 18px)"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0" style="width: 60px;">
-                        Mâncio Lima 
-                      </h2>
-                    </div>
-                  </div>
-                </a>
-                
-                <a class="a-tarauaca" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center flex-row-reverse">
-                      <div class="dot"
-                        style="transform: translate(-52px, -22px)"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0">
-                        Tarauacá
-                      </h2>
-                    </div>
-                  </div>
-                </a>
-                
-                <a class="a-feijo " href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
-                      style="transform: translateY(-5px);">
-                        Feijó 
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+            <div class="col-lg-6 col-md-12 pt-5 mt-0">
+              A educação é a base da transformação. A partir dessa premissa, o
+              projeto Todos contra o Aedes aegypti surge como uma resposta ao
+              aumento alarmante dos casos de dengue, zika e chikungunya no
+              Brasil. Por meio de ações educativas, mobilização social e
+              engajamento, a iniciativa busca transformar estudantes do Ensino
+              Fundamental em agentes de mudança na luta contra o mosquito
+              transmissor.
+            </div>
+          </div>
+        </div>
 
-                <a class="a-sena-madureira" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"
-                      style="transform: translateY(20px);"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
-                      style="width: 85px;">
-                        Sena Madureira
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+        <div class="my-5"></div>
 
-                <a class="a-capixaba" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="dot"
-                      style="transform: translate(80px, -17px)"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0">
-                        Capixaba
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+        <div data-aos="fade-right" data-aos-delay="100">
+          <div class="container">
+            <div class="row gy-4">
+              <div
+                class="col-lg-5 col-md-12 d-flex justify-content-center position-relative"
+                data-aos="fade-up"
+              >
+                <div
+                  class="container-image d-flex justify-content-center position-relative"
+                  style="max-width: 367px"
+                >
+                  <img
+                    src="./assets/img/acoes-acre.png"
+                    alt="Ações no Acre em 2025"
+                    style="max-width: 367px"
+                  />
 
-                <a class="a-xapuri" href="#steps">
-                  <div data-aos="zoom-in-right" data-aos-delay="300" class="aos-init aos-animate m-0">
-                    <div class="d-flex justify-content-between align-items-center flex-row-reverse">
-                      <div class="dot"></div>
-                      <h2 class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0">
+                  <a class="a-rio-branco" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(35px, 15px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                        >
+                          Rio Branco
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-senador-guiomard" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(3px, -28px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                        >
+                          Senador Guiomard
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-cruzeiro-do-sul" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translateY(10px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                          style="width: 76px"
+                        >
+                          Cruzeiro do Sul
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-rodrigues-alves" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center flex-row-reverse"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(-27px, -26px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                          style="width: 90px"
+                        >
+                          Rodrigues Alves
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-mancio-lima" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center flex-row-reverse"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(-11px, 18px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                          style="width: 60px"
+                        >
+                          Mâncio Lima
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-tarauaca" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center flex-row-reverse"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(-52px, -22px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                        >
+                          Tarauacá
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-feijo" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="dot"></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                          style="transform: translateY(-5px)"
+                        >
+                          Feijó
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-sena-madureira" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translateY(20px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                          style="width: 85px"
+                        >
+                          Sena Madureira
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-capixaba" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="dot"
+                          style="transform: translate(80px, -17px)"
+                        ></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                        >
+                          Capixaba
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="a-xapuri" href="#steps">
+                    <div
+                      data-aos="zoom-in-right"
+                      data-aos-delay="300"
+                      class="aos-init aos-animate m-0"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center flex-row-reverse"
+                      >
+                        <div class="dot"></div>
+                        <h2
+                          class="font-weight-4 text-white hover:text-yellow-500 texto-com-borda-grossa-fine p-1 m-0"
+                        >
                           Xapuri
-                      </h2>
+                        </h2>
+                      </div>
                     </div>
-                  </div>
-                </a>
-
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-7 col-md-12" data-aos="fade-up">
-              <div class="boxes d-flex flex-column gap-5 justify-content-start">
-                <div class="box">
-                  Atuação em escolas públicas urbanas de 10 municípios do estado.
-                </div>
-                <div class="box">
-                  Capacitação de 616 professores e envolvimento de 15.400 estudantes do Ensino Fundamental I.
-                </div>
-                <div class="box">
-                  Organização de mutirões comunitários e atividades de campo para eliminação de criadouros.
-                </div>
-                <div class="box">
-                  Realização de campanhas de conscientização e concursos culturais para engajar alunos e professores.
+              <div class="col-lg-7 col-md-12" data-aos="fade-up">
+                <div
+                  class="boxes d-flex flex-column gap-5 justify-content-start"
+                >
+                  <div class="box">
+                    Atuação em escolas públicas urbanas de 10 municípios do
+                    estado.
+                  </div>
+                  <div class="box">
+                    Capacitação de 616 professores e envolvimento de 15.400
+                    estudantes do Ensino Fundamental I.
+                  </div>
+                  <div class="box">
+                    Organização de mutirões comunitários e atividades de campo
+                    para eliminação de criadouros.
+                  </div>
+                  <div class="box">
+                    Realização de campanhas de conscientização e concursos
+                    culturais para engajar alunos e professores.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-  
-        <div class="container-fluid">
-          <div class="w-100 line my-5"></div>
-        </div>
-      </div>
 
-      <div class="position-relative" data-aos="fade-down-left" data-aos-delay="100">
-        <div id="alagoas"></div>
-        <div class="container">
-          <div class="row gy-4">
-            <h2 class="text-center font-weight-7 mb-4 accent-color vinila">Alagoas</h2>
-            
+          <div class="container-fluid">
+            <div class="w-100 line my-5"></div>
+          </div>
+        </div>
+
+        <div
+          class="position-relative"
+          data-aos="fade-down-left"
+          data-aos-delay="100"
+        >
+          <div id="alagoas"></div>
+          <div class="container">
+            <div class="row gy-4">
+              <h2 class="text-center font-weight-7 mb-4 accent-color vinila">
+                Alagoas
+              </h2>
+
+              <div class="col-lg-6 col-md-12">
+                Em Alagoas, o cenário inicial, medido em agosto de 2017, também
+                apresentava preocupações significativas com índices elevados de
+                infestação em municípios como:
+                <div class="d-flex mt-3 flex-column gap-2">
+                  <div class="box">
+                    Crateús, com <b class="accent-color">16,75%</b>
+                  </div>
+                  <div class="box">
+                    Estrela de Alagoas, com <b class="accent-color">16,75%</b>
+                  </div>
+                  <div class="box">
+                    Taquarana, com <b class="accent-color">16,06%</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                Com a implementação do projeto e as ações realizadas até
+                novembro de 2017, houve reduções expressivas, como:
+                <div class="d-flex mt-3 flex-column gap-2">
+                  <div class="box">
+                    Crateús para <b class="accent-color">6,3%</b>
+                  </div>
+                  <div class="box">
+                    Estrela de Alagoas para <b class="accent-color">7,0%</b>
+                  </div>
+                  <div class="box">
+                    Taquarana para <b class="accent-color">6,4%</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                O trabalho conjunto entre professores, estudantes e comunidades
+                resultou em avanços significativos na diminuição dos riscos de
+                arboviroses, promovendo um ambiente mais saudável e seguro para
+                todos.
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="w-100 line my-5"></div>
+          </div>
+        </div>
+
+        <div class="container position-relative">
+          <div id="pernambuco"></div>
+          <div class="row gy-4" data-aos="fade-right" data-aos-delay="100">
+            <h2 class="text-center font-weight-7 mb-4 accent-color vinila">
+              Pernambuco
+            </h2>
+
             <div class="col-lg-6 col-md-12">
-              Em Alagoas, o cenário inicial, medido em
-              agosto de 2017, também apresentava
-              preocupações significativas com índices
-              elevados de infestação em municípios
-              como:
+              Em Pernambuco, o projeto impactou positivamente os índices de
+              infestação do mosquito Aedes aegypti em diversos municípios. Antes
+              da execução do projeto, em agosto de 2017, o LIRAa (Levantamento
+              Rápido de Índices para Aedes aegypti) apontava riscos elevados em
+              várias cidades, como:
               <div class="d-flex mt-3 flex-column gap-2">
-                <div class="box">Crateús, com <b class="accent-color">16,75%</b></div>
-                <div class="box">Estrela de Alagoas, com <b class="accent-color">16,75%</b></div>
-                <div class="box">Taquarana, com <b class="accent-color">16,06%</b></div>
+                <div class="box">
+                  São Joaquim do Monte, com <b class="accent-color">16,1%</b>
+                </div>
+                <div class="box">
+                  Santa Cruz do Capibaribe, com
+                  <b class="accent-color">15,2%</b>
+                </div>
+                <div class="box">
+                  Angelim, com <b class="accent-color">14,5%</b>
+                </div>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
-              Com a implementação do projeto e as
-              ações realizadas até novembro de 2017,
-              houve reduções expressivas, como:
+              Após a execução do projeto, em novembro de 2017, os resultados
+              demonstraram reduções importantes, como:
               <div class="d-flex mt-3 flex-column gap-2">
-                <div class="box">Crateús para <b class="accent-color">6,3%</b></div>
-                <div class="box">Estrela de Alagoas para <b class="accent-color">7,0%</b></div>
-                <div class="box">Taquarana para <b class="accent-color">6,4%</b></div>
+                <div class="box">
+                  São Joaquim do Monte para <b class="accent-color">3,4%</b>
+                </div>
+                <div class="box">
+                  Santa Cruz do Capibaribe para <b class="accent-color">2,2%</b>
+                </div>
+                <div class="box">
+                  Angelim para <b class="accent-color">3,5%</b>
+                </div>
               </div>
             </div>
 
             <div class="col-12">
-              O trabalho conjunto entre professores, estudantes e comunidades resultou em avanços
-              significativos na diminuição dos riscos de arboviroses, promovendo um ambiente mais
-              saudável e seguro para todos.
+              Esses números mostram o impacto das ações educativas e de
+              mobilização no combate ao mosquito, refletindo diretamente na
+              saúde pública das comunidades.
             </div>
-
           </div>
-          
         </div>
-        
-        <div class="container-fluid" >
+      </section>
+      <!-- /Locale Section -->
+
+      <!-- Program Section -->
+      <section
+        id="program"
+        class="section background-contrast"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-5">
+              <h2 class="text-center font-weight-7 background-color">
+                CRONOGRAMA DE LANÇAMENTOS
+              </h2>
+              <h4 class="text-center text-2">
+                Todos Contra o <i>Aedes aegypti</i>
+              </h4>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+              <div
+                class="background-secondary"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <article class="first left">
+                  <div class="city">RIO BRANCO</div>
+                  <div class="date">12/05/2025</div>
+                </article>
+
+                <article class="right">
+                  <div class="city">SENADOR GUIOMARD</div>
+                  <div class="date">16/05/2025</div>
+                </article>
+
+                <article class="left">
+                  <div class="city">SENA MADUREIRA</div>
+                  <div class="date">19/05/2025</div>
+                </article>
+
+                <article class="right">
+                  <div class="city">XAPURI</div>
+                  <div class="date">20/05/2025</div>
+                </article>
+
+                <article class="left">
+                  <div class="city">CAPIXABA</div>
+                  <div class="date">22/05/2025</div>
+                </article>
+
+                <article class="right">
+                  <div class="city">CRUZEIRO <span>DO SUL</span></div>
+                  <div class="date">26/05/2025</div>
+                </article>
+
+                <article class="left">
+                  <div class="city">MÂNCIO LIMA</div>
+                  <div class="date">28/05/2025</div>
+                </article>
+
+                <article class="right">
+                  <div class="city">RODRIGUES ALVES</div>
+                  <div class="date">29/05/2025</div>
+                </article>
+
+                <article class="left">
+                  <div class="city">TARAUACÁ</div>
+                  <div class="date">02/06/2025</div>
+                </article>
+
+                <article class="last right">
+                  <div class="city">FEIJÓ</div>
+                  <div class="date">04/06/2025</div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Program Section -->
+
+      <!-- Galery Section -->
+      <section
+        id="galery"
+        class="galery galery-details section background-secondary pt-2"
+      >
+        <h2 class="bg-title w-100 col-12 surface-color">GALERIA</h2>
+
+        <h2 class="text-center font-weight-7 default-color">
+          Lançamentos e Formações
+        </h2>
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="galery-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 3000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next.lancamentos",
+                  "prevEl": ".swiper-button-prev.lancamentos"
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center lancamentos">
+              <script>
+                const lancamentos = document.querySelector(
+                  ".swiper-wrapper.align-items-center.lancamentos"
+                );
+                for (let i = 1; i <= 15; i++) {
+                  const index = i.toString().padStart(2, "0");
+                  const slide = document.createElement("div");
+                  slide.className = "swiper-slide";
+                  slide.innerHTML = `<img src="assets/img/galerias/lancamentos_formacoes/${index}.jpg" alt="imagem ${index}">`;
+                  lancamentos.appendChild(slide);
+                }
+              </script>
+            </div>
+          </div>
+          <div class="position-absolute swiper-button-prev lancamentos"></div>
+          <div class="position-absolute swiper-button-next lancamentos"></div>
+        </div>
+
+        <!-- <h2 class="text-center font-weight-7 default-color mt-5">Outros</h2>
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="galery-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 3000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next.teste",
+                  "prevEl": ".swiper-button-prev.teste"
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center teste">
+              <script>
+                const teste = document.querySelector(
+                  ".swiper-wrapper.align-items-center.teste"
+                );
+                for (let i = 1; i <= 4; i++) {
+                  const index = i.toString().padStart(2, "0");
+                  const slide = document.createElement("div");
+                  slide.className = "swiper-slide";
+                  slide.innerHTML = `<img src="assets/img/galerias/portfolio/${index}.jpg" alt="imagem ${index}">`;
+                  teste.appendChild(slide);
+                }
+              </script>
+            </div>
+          </div>
+          <div class="position-absolute swiper-button-prev teste"></div>
+          <div class="position-absolute swiper-button-next teste"></div>
+        </div> -->
+
+        <div class="container-fluid">
           <div class="w-100 line my-5"></div>
         </div>
-      </div>
-    
-      <div class="container position-relative">
-        <div id="pernambuco"></div>
-        <div class="row gy-4" data-aos="fade-right" data-aos-delay="100">
-          <h2 class="text-center font-weight-7 mb-4 accent-color vinila">Pernambuco</h2>
+      </section>
+      <!-- /Galery Section -->
 
-          <div class="col-lg-6 col-md-12">
-            Em Pernambuco, o projeto impactou
-            positivamente os índices de infestação
-            do mosquito Aedes aegypti em diversos
-            municípios. Antes da execução do
-            projeto, em agosto de 2017, o LIRAa
-            (Levantamento Rápido de Índices para
-            Aedes aegypti) apontava riscos elevados
-            em várias cidades, como:
-            <div class="d-flex mt-3 flex-column gap-2">
-              <div class="box">São Joaquim do Monte, com <b class="accent-color">16,1%</b></div>
-              <div class="box">Santa Cruz do Capibaribe, com <b class="accent-color">15,2%</b></div>
-              <div class="box">Angelim, com <b class="accent-color">14,5%</b></div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12">
-            Após a execução do projeto, em
-            novembro de 2017, os resultados
-            demonstraram reduções importantes,
-            como:
-            <div class="d-flex mt-3 flex-column gap-2">
-              <div class="box">São Joaquim do Monte para <b class="accent-color">3,4%</b></div>
-              <div class="box">Santa Cruz do Capibaribe para <b class="accent-color">2,2%</b></div>
-              <div class="box">Angelim para <b class="accent-color">3,5%</b></div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            Esses números mostram o impacto das ações educativas e de mobilização no combate
-            ao mosquito, refletindo diretamente na saúde pública das comunidades.
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Locale Section -->
-
-    <!-- Program Section -->
-    <section id="program" class="section background-contrast" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-12 mb-5">
-            <h2 class="text-center font-weight-7 background-color">
-              CRONOGRAMA DE LANÇAMENTOS
-            </h2>
-            <h4 class="text-center text-2">
-              Todos Contra o <i>Aedes aegypti</i>
-            </h4>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12 d-flex justify-content-center">
-            
-            <div class="background-secondary" data-aos="fade-up" data-aos-delay="100">
-              <article class="first left">
-                <div class="city">RIO BRANCO</div>
-                <div class="date">12/05/2025</div>
-              </article>
-              
-              <article class="right">
-                <div class="city">SENADOR GUIOMARD</div>
-                <div class="date">16/05/2025</div>
-              </article>
-
-              <article class="left">
-                <div class="city">SENA MADUREIRA</div>
-                <div class="date">19/05/2025</div>
-              </article>
-              
-              <article class="right">
-                <div class="city">XAPURI</div>
-                <div class="date">20/05/2025</div>
-              </article>
-              
-              <article class="left">
-                <div class="city">CAPIXABA</div>
-                <div class="date">22/05/2025</div>
-              </article>
-              
-              <article class="right">
-                <div class="city">CRUZEIRO <span>DO SUL</span></div>
-                <div class="date">26/05/2025</div>
-              </article>
-              
-              <article class="left">
-                <div class="city">MÂNCIO LIMA</div>
-                <div class="date">28/05/2025</div>
-              </article>
-              
-              <article class="right">
-                <div class="city">RODRIGUES ALVES</div>
-                <div class="date">29/05/2025</div>
-              </article>
-              
-              <article class="left">
-                <div class="city">TARAUACÁ</div>
-                <div class="date">02/06/2025</div>
-              </article>
-                            
-              <article class="last right">
-                <div class="city">FEIJÓ</div>
-                <div class="date">04/06/2025</div>
-              </article>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- /Program Section -->
-
-    <!-- Galery Section -->
-    <section id="galery" class="galery galery-details section background-secondary pt-2">
-      <h2 class="bg-title w-100 col-12 surface-color">GALERIA</h2>
-      <div class="container position-relative" data-aos="fade-up">
-        <div class="galery-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 3000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }    
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-  
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/app-1.jpg" alt="">
-            </div>
-  
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/product-1.jpg" alt="">
-            </div>
-  
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/branding-1.jpg" alt="">
-            </div>
-  
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/books-1.jpg" alt="">
-            </div>
-  
-          </div>
-        </div>
-        <div class="position-absolute swiper-button-prev"></div>
-        <div class="position-absolute swiper-button-next"></div>
-      </div>
-
-      <div class="container-fluid" >
-        <div class="w-100 line my-5"></div>
-      </div>
-    </section><!-- /Galery Section -->
-
-    <!-- Contest Section -->
-    <section id="contest" class="contest section background-contrast">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-12 position-relative mt-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="w-100 position-absolute d-flex justify-content-center">
-              <div class="aedes-container">
-                <div class="aedes"></div>
+      <!-- Contest Section -->
+      <section id="contest" class="contest section background-contrast">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 position-relative mt-5"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                class="w-100 position-absolute d-flex justify-content-center"
+              >
+                <div class="aedes-container">
+                  <div class="aedes"></div>
+                </div>
               </div>
-            </div>
-            <h2 class="bg-title">CONCURSOS</h2>
+              <h2 class="bg-title">CONCURSOS</h2>
               <p class="text-justify">
-                As premiações no projeto Todos contra o Aedes aegypti desempenham um papel essencial
-                para estimular o engajamento e reconhecer as melhores iniciativas de professores e
-                estudantes no combate ao mosquito transmissor de doenças como dengue, zika e
-                chikungunya.
-                <br><br>
-                Por meio de concursos e atividades interativas, as premiações incentivam a criatividade, o
-                protagonismo e a aplicação prática dos conhecimentos adquiridos durante o projeto.
-                <br><br>
-                Estudantes e professores são desafiados a desenvolver soluções inovadoras, como vídeos,
-                paródias musicais, poesias, cordéis e campanhas de conscientização, que mobilizam a
-                comunidade escolar e fortalecem a luta contra o Aedes aegypti.
-                <br><br>
-                Ao final de cada etapa, as melhores ações são destacadas e premiadas, valorizando o esforço
-                coletivo e individual de quem participa ativamente do projeto. Além de reconhecer o
-                desempenho, as premiações motivam a continuidade das práticas educativas e preventivas,
-                reforçando o papel de cada indivíduo na transformação social e no cuidado com a saúde
-                pública.
+                As premiações no projeto Todos contra o Aedes aegypti
+                desempenham um papel essencial para estimular o engajamento e
+                reconhecer as melhores iniciativas de professores e estudantes
+                no combate ao mosquito transmissor de doenças como dengue, zika
+                e chikungunya.
+                <br /><br />
+                Por meio de concursos e atividades interativas, as premiações
+                incentivam a criatividade, o protagonismo e a aplicação prática
+                dos conhecimentos adquiridos durante o projeto.
+                <br /><br />
+                Estudantes e professores são desafiados a desenvolver soluções
+                inovadoras, como vídeos, paródias musicais, poesias, cordéis e
+                campanhas de conscientização, que mobilizam a comunidade escolar
+                e fortalecem a luta contra o Aedes aegypti.
+                <br /><br />
+                Ao final de cada etapa, as melhores ações são destacadas e
+                premiadas, valorizando o esforço coletivo e individual de quem
+                participa ativamente do projeto. Além de reconhecer o
+                desempenho, as premiações motivam a continuidade das práticas
+                educativas e preventivas, reforçando o papel de cada indivíduo
+                na transformação social e no cuidado com a saúde pública.
               </p>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Contest Section -->
-    
-    <!-- Student Section -->
-    <section id="student" class="student section background-contrast">
-      
-      <div class="container">
-        <div class="row">
-          
-          <div class="col-12 pb-5 full-line text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="bg-title w-100 col-12 surface-color">ÁREA DO ALUNO</h2>
-            <div class="d-flex flex-column align-items-center gap-3">
-              <small>Coloque aqui o código que está na primeira página do livro</small>
-              <input  id="input-login-student" type="text">
-              <button id="btn-login-student">ENTRAR</button>
             </div>
-            <img class="mt-3" src="./assets/img/trashes.png" alt="lixos">
-          </div>
-          
-        </div>
-      </div>
-
-    </section><!-- /Student Section -->
-    
-    <!-- Teacher Section -->
-    <section id="teacher" class="teacher section background-secondary">
-      
-      <div class="container">
-        <div class="row">
-          <div class="aedes-container d-flex justify-content-center align-items-center gap-5">
-            <div class="aedes"></div>
-            <h2 class="bg-title flip surface-color W-100">ÁREA DO PROFESSOR</h2>
-          </div>
-          <div class="col-lg-7 col-md-12 text-justify">
-            Professor(a), nessa área você encontrará outros
-            materiais que te auxiliarão no trabalho em sala de
-            aula. Faça o seu cadastro na plataforma e utilize
-            o código de matrícula presente na 1ª página do
-            livro do professor para acessar o conteúdo.
-          </div>
-          <div class="col-lg-5 col-md-12">
-            <form class="form w-clearfix" data-name="Login" action="https://wiquadro.com.br/site/login" method="POST" name="wf-form-Login">
-              <div class="form-group">
-                <label for="LoginForm_username">E-MAIL</label>
-                <input type="email" name="LoginForm[username]" id="LoginForm_username">
-              </div>
-              <div class="form-group pt-2 pb-4">
-                <label for="LoginForm_password">SENHA</label>
-                <input type="password" name="LoginForm[password]" id="LoginForm_password">
-              </div>
-
-              <div class="d-flex justify-content-between">
-                <button type="submit">LOGIN</button>
-                <a href="http://wiquadro.com.br/site/registro/tipo/professor">
-                  CADASTRAR
-								</a>
-              </div>
-            </form>
           </div>
         </div>
-      </div>
-    
-    </section><!-- /Teacher Section -->
-    
-    <!-- Footer Section -->
-    <footer class="footer section position-relative">
-      <div class="line position-absolute"></div>
-      <div class="container">
-        <div class="row">
-          <div class="d-flex align-items-center justify-content-center gap-5">
-            <div class="social-links">
-              <a target="_blank" href="https://youtube.com/@todoscontraoaedesaegypti?si=At_27vtclh-GG0QA" class="youtube"><i class="bi bi-youtube"></i></a>
-              <a target="_blank" href="https://www.instagram.com/todoscontraoaedesaegypti" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a target="_blank" href="https://www.facebook.com/share/19tfYk2dV3" class="facebook"><i class="bi bi-facebook"></i></a>
+      </section>
+      <!-- /Contest Section -->
+
+      <!-- Student Section -->
+      <section id="student" class="student section background-contrast">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 pb-5 full-line text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h2 class="bg-title w-100 col-12 surface-color">ÁREA DO ALUNO</h2>
+              <div class="d-flex flex-column align-items-center gap-3">
+                <small
+                  >Coloque aqui o código que está na primeira página do
+                  livro</small
+                >
+                <input id="input-login-student" type="text" />
+                <button id="btn-login-student">ENTRAR</button>
+              </div>
+              <img class="mt-3" src="./assets/img/trashes.png" alt="lixos" />
             </div>
-  
-            <div class="logos d-flex gap-5">
-              <div class="group d-flex flex-column">
-                <sup>APOIO</sup>
-                <div class="apoio">
-                  <div class="container-img sesacre">
-                    <img class="sesacre" src="./assets/img/logos/sesacre.svg">
+          </div>
+        </div>
+      </section>
+      <!-- /Student Section -->
+
+      <!-- Teacher Section -->
+      <section id="teacher" class="teacher section background-secondary">
+        <div class="container">
+          <div class="row">
+            <div
+              class="aedes-container d-flex justify-content-center align-items-center gap-5"
+            >
+              <div class="aedes"></div>
+              <h2 class="bg-title flip surface-color W-100">
+                ÁREA DO PROFESSOR
+              </h2>
+            </div>
+            <div class="col-lg-7 col-md-12 text-justify">
+              Professor(a), nessa área você encontrará outros materiais que te
+              auxiliarão no trabalho em sala de aula. Faça o seu cadastro na
+              plataforma e utilize o código de matrícula presente na 1ª página
+              do livro do professor para acessar o conteúdo.
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <form
+                class="form w-clearfix"
+                data-name="Login"
+                action="https://wiquadro.com.br/site/login"
+                method="POST"
+                name="wf-form-Login"
+              >
+                <div class="form-group">
+                  <label for="LoginForm_username">E-MAIL</label>
+                  <input
+                    type="email"
+                    name="LoginForm[username]"
+                    id="LoginForm_username"
+                  />
+                </div>
+                <div class="form-group pt-2 pb-4">
+                  <label for="LoginForm_password">SENHA</label>
+                  <input
+                    type="password"
+                    name="LoginForm[password]"
+                    id="LoginForm_password"
+                  />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <button type="submit">LOGIN</button>
+                  <a href="http://wiquadro.com.br/site/registro/tipo/professor">
+                    CADASTRAR
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Teacher Section -->
+
+      <!-- Footer Section -->
+      <footer class="footer section position-relative">
+        <div class="line position-absolute"></div>
+        <div class="container">
+          <div class="row">
+            <div class="d-flex align-items-center justify-content-center gap-5">
+              <div class="social-links">
+                <a
+                  target="_blank"
+                  href="https://youtube.com/@todoscontraoaedesaegypti?si=At_27vtclh-GG0QA"
+                  class="youtube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/todoscontraoaedesaegypti"
+                  class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/share/19tfYk2dV3"
+                  class="facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </div>
+
+              <div class="logos d-flex gap-5">
+                <div class="group d-flex flex-column">
+                  <sup>APOIO</sup>
+                  <div class="apoio">
+                    <div class="container-img sesacre">
+                      <img
+                        class="sesacre"
+                        src="./assets/img/logos/sesacre.svg"
+                      />
+                    </div>
+                    <div class="container-img see">
+                      <img class="see" src="./assets/img/logos/see.svg" />
+                    </div>
+                    <div class="container-img acre">
+                      <img class="acre" src="./assets/img/logos/acre.svg" />
+                    </div>
                   </div>
-                  <div class="container-img see">
-                    <img class="see" src="./assets/img/logos/see.svg">
-                  </div>
-                  <div class="container-img acre">
-                    <img class="acre" src="./assets/img/logos/acre.svg">
+                </div>
+
+                <div class="group d-flex flex-column">
+                  <sup>REALIZAÇÃO</sup>
+                  <div class="realizacao">
+                    <div class="container-img sapien">
+                      <img
+                        class="sapien"
+                        src="./assets/img/logos/sapien.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="container-img ministerio">
+                      <img
+                        class="ministerio"
+                        src="./assets/img/logos/ministerio.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-  
-              <div class="group d-flex flex-column">
-                <sup>REALIZAÇÃO</sup>
-                <div class="realizacao">
-                  <div class="container-img sapien">
-                    <img class="sapien" src="./assets/img/logos/sapien.svg" alt="">
-                  </div>
-                  <div class="container-img ministerio">
-                    <img class="ministerio" src="./assets/img/logos/ministerio.svg" alt="">
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer><!-- /Footer Section -->
+      </footer>
+      <!-- /Footer Section -->
+    </main>
 
-  </main>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script async src="https://widget.gspeech.io/d91d59fe2892a905b3ae9e0f694055a0"></script>
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script
+      async
+      src="https://widget.gspeech.io/d91d59fe2892a905b3ae9e0f694055a0"
+    ></script>
+  </body>
 </html>
