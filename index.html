@@ -203,9 +203,7 @@
                     </div>
 
                     <div
-                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12"
-                      style="font-size: 1.4rem"
-                    >
+                      class="box text-center d-flex flex-column col-lg-4 col-sm-6 col-12">
                       <img src="./assets/img/icon/projects.png" alt="" />
                       Desenvolvimento de Projetos Pedagógicos nas Escolas.
                     </div>
@@ -249,7 +247,7 @@
               <a class="a-acre" href="#acre">
                 <div data-aos="zoom-in-right" data-aos-delay="300">
                   <div class="d-flex flex-column align-items-center">
-                    <img
+                    <img alt="icone de alvo do aedes aegypti"
                       class="pulsar"
                       src="./assets/img/alvo-aedes-aegypti.png"
                     />
@@ -265,7 +263,7 @@
               <a class="a-alagoas" href="#alagoas">
                 <div data-aos="zoom-in-down" data-aos-delay="300">
                   <div class="d-flex flex-column align-items-center scale-05">
-                    <img
+                    <img alt="icone de alvo do aedes aegypti"
                       class="pulsar"
                       src="./assets/img/alvo-aedes-aegypti.png"
                     />
@@ -281,7 +279,7 @@
               <a class="a-pernambuco" href="#pernambuco">
                 <div data-aos="zoom-in-up" data-aos-delay="300">
                   <div class="d-flex flex-column align-items-center scale-05">
-                    <img
+                    <img alt="icone de alvo do aedes aegypti"
                       class="pulsar"
                       src="./assets/img/alvo-aedes-aegypti.png"
                     />
@@ -785,57 +783,6 @@
       </section>
       <!-- /Program Section -->
 
-      <!-- Galery Section -->
-      <!-- <section
-        id="galery"
-        class="galery galery-details section background-secondary pt-2"
-      >
-        <h2 class="bg-title w-100 col-12 surface-color">GALERIA</h2>
-
-        <h2 class="text-center font-weight-7 default-color">
-          Lançamentos e Formações
-        </h2>
-        <div class="container position-relative" data-aos="fade-up">
-          <div class="galery-details-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 3000
-                },
-                "slidesPerView": "auto",
-                "navigation": {
-                  "nextEl": ".swiper-button-next.lancamentos",
-                  "prevEl": ".swiper-button-prev.lancamentos"
-                }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center lancamentos">
-              <script>
-                const lancamentos = document.querySelector(
-                  ".swiper-wrapper.align-items-center.lancamentos"
-                );
-                for (let i = 1; i <= 15; i++) {
-                  const index = i.toString().padStart(2, "0");
-                  const slide = document.createElement("div");
-                  slide.className = "swiper-slide";
-                  slide.innerHTML = `<img src="assets/img/galerias/lancamentos_formacoes/${index}.jpg" alt="imagem ${index}">`;
-                  lancamentos.appendChild(slide);
-                }
-              </script>
-            </div>
-          </div>
-          <div class="position-absolute swiper-button-prev lancamentos"></div>
-          <div class="position-absolute swiper-button-next lancamentos"></div>
-        </div>
-
-        <div class="container-fluid">
-          <div class="w-100 line my-5"></div>
-        </div>
-      </section> -->
-      <!-- /Galery Section -->
-
       <!-- Contest Section -->
       <section id="contest" class="contest section background-contrast">
         <div class="container">
@@ -897,7 +844,7 @@
                   >Coloque aqui o código que está na primeira página do
                   livro</small
                 >
-                <input id="input-login-student" type="text" />
+                <input placeholder="Digito o código" id="input-login-student" type="text" />
                 <button id="btn-login-student">ENTRAR</button>
               </div>
               <img class="mt-3" src="./assets/img/trashes.png" alt="lixos" />
@@ -976,19 +923,25 @@
           <div class="row">
             <div class="d-flex align-items-center justify-content-center gap-5">
               <div class="social-links">
-                <a
+                <a 
+                  title="YouTube"
+                  rel="noopener"
                   target="_blank"
                   href="https://youtube.com/@todoscontraoaedesaegypti?si=At_27vtclh-GG0QA"
                   class="youtube"
                   ><i class="bi bi-youtube"></i
                 ></a>
                 <a
+                  title="Instagram"
+                  rel="noopener"
                   target="_blank"
                   href="https://www.instagram.com/todoscontraoaedesaegypti"
                   class="instagram"
                   ><i class="bi bi-instagram"></i
                 ></a>
                 <a
+                  title="Facebook"
+                  rel="noopener"
                   target="_blank"
                   href="https://www.facebook.com/share/19tfYk2dV3"
                   class="facebook"
@@ -1002,15 +955,20 @@
                   <div class="apoio">
                     <div class="container-img sesacre">
                       <img
+                        alt="logo secretaria de estado de saúde"
                         class="sesacre"
                         src="./assets/img/logos/sesacre.svg"
                       />
                     </div>
                     <div class="container-img see">
-                      <img class="see" src="./assets/img/logos/see.svg" />
+                      <img
+                        alt="logo secretaria de estadode educação e cultura"
+                        class="see" src="./assets/img/logos/see.svg" />
                     </div>
                     <div class="container-img acre">
-                      <img class="acre" src="./assets/img/logos/acre.svg" />
+                      <img
+                        alt="logo governo do acre"
+                        class="acre" src="./assets/img/logos/acre.svg" />
                     </div>
                   </div>
                 </div>
@@ -1047,6 +1005,7 @@
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
+      title="Voltar ao topo"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
