@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Company Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <style>
+    /* =========================
+       CATEGORIAS
+    ========================== */
+    .galeria-categorias {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .galeria-categoria.active div {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    .galeria-categoria {
+      flex: 1 1 220px;
+      text-decoration: none;
+    }
+
+    .galeria-categoria .card {
+      text-align: center;
+      padding: 1.25rem;
+      transition: 0.3s;
+    }
+
+    .galeria-categoria:hover .card {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* =========================
+       GALERIA
+    ========================== */
+
+    /* Section apenas dá respiro */
+    .galeria-section {
+      padding: 1.5rem;
+    }
+
+    /* Wrapper centralizado */
+    .galeria-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+
+      max-width: 1200px;
+      margin: 0 auto;
+      /* 👈 centro real */
+    }
+
+    /* Item */
+    .galeria-item {
+      flex: 0 0 calc(25% - 1rem);
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #000;
+    }
+
+    .galeria-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Breakpoints */
+    @media (max-width: 1200px) {
+      .galeria-item {
+        flex: 0 0 calc(33.333% - 1rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .galeria-item {
+        flex: 0 0 calc(50% - 1rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .galeria-item {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-danger">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-end justify-content-lg-center">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/#project" class="active">O PROJETO</a></li>
+          <li><a href="/#locale">LOCALIDADES</a></li>
+          <li><a href="/#program">PROGRAMAÇÃO</a></li>
+          <li><a href="galeria.html">GALERIA</a></li>
+          <li><a href="/#contest">CONCURSOS</a></li>
+          <li><a href="/#student">ÁREA DO ALUNO</a></li>
+          <li><a href="/#teacher">ÁREA DO PROFESSOR E DO ALUNO</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <h2 class="text-center text-white mb-4">GALERIA</h2>
+
+    <!-- CATEGORIAS -->
+    <div class="galeria-categorias">
+      <a href="#" data-target="mobilizacao" class="galeria-categoria active">
+        <div class="card">MOBILIZAÇÃO</div>
+      </a>
+      <a href="#" data-target="formacao" class="galeria-categoria">
+        <div class="card">LANÇAMENTO</div>
+      </a>
+      <a href="#" data-target="agentes" class="galeria-categoria">
+        <div class="card">AGENTES</div>
+      </a>
+      <a href="#" data-target="concurso" class="galeria-categoria">
+        <div class="card">CONCURSO</div>
+      </a>
+    </div>
+
+    <!-- GALERIAS -->
+    <section id="mobilizacao" class="galeria-section"></section>
+    <section id="formacao" class="galeria-section d-none"></section>
+    <section id="agentes" class="galeria-section d-none"></section>
+    <section id="concurso" class="galeria-section d-none"></section>
+  </main>
+
+
+  <!-- Footer Section -->
+  <footer class="footer section position-relative">
+    <div class="line position-absolute"></div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex align-items-center justify-content-center gap-5">
+          <div class="social-links">
+            <a href="#" class="youtube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+
+          <div class="logos d-flex gap-5">
+            <div class="group d-flex flex-column">
+              <sup>APOIO</sup>
+              <div class="apoio">
+                <div class="container-img sesacre">
+                  <img class="sesacre" alt="logo sesacre" src="./assets/img/logos/sesacre.svg">
+                </div>
+                <div class="container-img see">
+                  <img class="see" alt="logo see" src="./assets/img/logos/see.svg">
+                </div>
+                <div class="container-img acre">
+                  <img class="acre" alt="governo do acre" src="./assets/img/logos/acre.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="group d-flex flex-column">
+              <sup>REALIZAÇÃO</sup>
+              <div class="realizacao">
+                <div class="container-img sapien">
+                  <img class="sapien" src="./assets/img/logos/sapien.svg" alt="logo instituto sapien">
+                </div>
+                <div class="container-img ministerio">
+                  <img class="ministerio" src="./assets/img/logos/ministerio.svg" alt="logo ministerio da saúde">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /Footer Section -->
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Scroll to top"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script async src="https://widget.gspeech.io/d91d59fe2892a905b3ae9e0f694055a0"></script>
+  <script>
+    /* =========================
+       CATEGORIAS
+    ========================== */
+    document.querySelectorAll('.galeria-categoria').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+
+        document.querySelectorAll('.galeria-categoria')
+          .forEach(el => el.classList.remove('active'));
+
+        link.classList.add('active');
+
+        document.querySelectorAll('.galeria-section')
+          .forEach(sec => sec.classList.add('d-none'));
+
+        document.getElementById(link.dataset.target)
+          .classList.remove('d-none');
+      });
+    });
+
+    /* =========================
+       GALERIA DINÂMICA
+    ========================== */
+    const galerias = {
+      mobilizacao: 40,
+      formacao: 34,
+      agentes: 23,
+      concurso: 23
+    };
+
+    function criarGaleria(categoria, total) {
+      const section = document.getElementById(categoria);
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'galeria-flex';
+
+      for (let i = 1; i <= total; i++) {
+        const a = document.createElement('a');
+        a.href = `assets/img/galeria/${categoria}/${i}.jpg`;
+        a.className = 'galeria-item glightbox';
+        a.dataset.gallery = categoria;
+
+        a.innerHTML = `
+        <img src="assets/img/galeria/${categoria}/thumbs/${i}.jpg"
+             loading="lazy"
+             alt="${categoria} ${i}">
+      `;
+
+        wrapper.appendChild(a);
+      }
+
+      section.appendChild(wrapper);
+    }
+
+    Object.entries(galerias).forEach(([cat, total]) => {
+      criarGaleria(cat, total);
+    });
+
+    GLightbox({ selector: '.glightbox' });
+  </script>
+
+</body>
+
+</html>
