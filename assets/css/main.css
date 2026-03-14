@@ -1339,6 +1339,27 @@ section,
   width: 326px;
 }
 
+#contest .d-flex a {
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contest .d-flex button {
+  background-color: var(--accent-color);
+  color: var(--surface-color);
+}
+
+#contest .d-flex a {
+  background-color: var(--background-color);
+  color: var(--default-color);
+}
+
 @media (max-width: 991px) {
   #contest .bg-title {
     width: 100%;
