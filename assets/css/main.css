@@ -928,16 +928,16 @@ section,
 }
 .hero .folder-item .paper .line-red {
   position: absolute;
-  width: 300vw !important;
-  margin-left: -50%;
+  width: 400vw !important;
+  margin-left: -200vw;
   z-index: 1;
   height: 20px;
   background-color: var(--background-color);
   top: 0;
 }
 .hero .folder-item .paper > img {
-  width: 300vw !important;
-  margin-left: -50%;
+  width: 400vw !important;
+  margin-left: -200vw;
   top: 20px;
 }
 .hero .folder-item .paper .text {
